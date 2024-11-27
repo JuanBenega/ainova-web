@@ -2,15 +2,15 @@
 
 .button {
   padding: 10px 20px;
-  background-color: $primary-color;
+  background-color: $primaryColor;
   color: white;
   border: none;
   border-radius: 5px;
-  font-family: $font-stack;
+  font-family: $fontStack;
   cursor: pointer;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: $secondary-color;
+    background-color: $secondaryColor;
   }
 }
