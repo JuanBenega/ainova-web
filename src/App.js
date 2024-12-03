@@ -1,18 +1,22 @@
 import React from "react";
-import "./scss/main.scss";
 
+//importación de componentes
+import Header from './components/Header'
 import Button from "./components/Button";
 
+//importación de estilos
+import "./scss/main.scss";
+
+
 function App() {
+
+  //declaración de funciones
   const handleClick = () => {
     alert("Botón presionado!");
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>¡Bienvenido a mi Aplicación!</h1>
-      <Button text="Haz clic aquí" onClick={handleClick} />
-    </div>
+    <Header />
   );
 }
 

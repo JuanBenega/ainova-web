@@ -5,7 +5,7 @@ import '../scss/components/_header.scss'
 const Header = () => {
 
     return (
-        <header>
+        <header className="header">
             
         </header>
     )
@@ -13,3 +13,5 @@ const Header = () => {
 
 
 }
+
+export default Header;

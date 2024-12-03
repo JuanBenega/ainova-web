@@ -1,0 +1,16 @@
+
+
+.header {
+    //@extend %flex !optional;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../../assets/headerBackground.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    box-sizing: border-box; 
+    //padding: 1rem 2rem;
+    //overflow: hidden;
+}

@@ -13,4 +13,16 @@
   background-color: #3700b3;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../../assets/headerBackground.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 /*# sourceMappingURL=main.css.map */
