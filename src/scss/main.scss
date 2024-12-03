@@ -1,5 +1,7 @@
 @import 'normalize.css';
 @import './utils/variables';
 @import './utils/mixins';
-@import './components/button'
+@import './utils/extends';
+@import './components/button';
+@import './components/header'
 
