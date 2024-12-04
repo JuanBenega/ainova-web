@@ -1,4 +1,10 @@
 @import 'normalize.css';
+.header .headerNav .headerMenu, .header .headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .button {
   padding: 10px 20px;
   background-color: #6200ea;
@@ -13,16 +19,26 @@
   background-color: #3700b3;
 }
 
-.header {
+.header .headerNav .headerMenu, .header .headerNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header {
   background-image: url("../../assets/headerBackground.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   box-sizing: border-box;
+}
+.header .headerNav {
+  flex-direction: row;
+}
+.header .headerNav .headerLogo {
+  width: 1rem;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
