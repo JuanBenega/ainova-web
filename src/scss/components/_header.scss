@@ -1,21 +1,36 @@
 @import '../utils/extends';
 
 .header {
-    background-image: url('../../assets/headerBackground.png');
-    background-size: contain;
-    background-position: center;
+    background-image: url('../../assets/headerBackground.svg');
+     background-size: contain;
+    // background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    
+    width: 95.7%;
+     height: 89px;
+
     box-sizing: border-box; 
-    //padding: 1rem 2rem;
+    margin: 0 1.5rem;
     //overflow: hidden;
 
     .headerNav{
         flex-direction: row;
         @extend %flex;
+        width: 74.6%;
+        padding: 2px 64px;
 
-        .headerMenu {
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(10px);
+
+        .headerMenuContainer {
+
             @extend %flex;
+
+            .headerMenu {
+                display: flex;
+            }
+
         }
     
         .headerLogo {

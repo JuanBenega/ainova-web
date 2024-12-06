@@ -1,5 +1,5 @@
 @import 'normalize.css';
-.header .headerNav .headerMenu, .header .headerNav {
+.header .headerNav .headerMenuContainer, .header .headerNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,22 +19,31 @@
   background-color: #3700b3;
 }
 
-.header .headerNav .headerMenu, .header .headerNav {
+.header .headerNav .headerMenuContainer, .header .headerNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header {
-  background-image: url("../../assets/headerBackground.png");
+  background-image: url("../../assets/headerBackground.svg");
   background-size: contain;
-  background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 95.7%;
+  height: 89px;
   box-sizing: border-box;
+  margin: 0 1.5rem;
 }
 .header .headerNav {
   flex-direction: row;
+  width: 74.6%;
+  padding: 2px 64px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+}
+.header .headerNav .headerMenuContainer .headerMenu {
+  display: flex;
 }
 .header .headerNav .headerLogo {
   width: 1rem;
