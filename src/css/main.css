@@ -1,5 +1,5 @@
 @import 'normalize.css';
-.header .headerNav .headerMenuContainer, .header .headerNav {
+.headerMenu, .headerNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,7 +11,7 @@
   color: white;
   border: none;
   border-radius: 5px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -19,7 +19,7 @@
   background-color: #3700b3;
 }
 
-.header .headerNav .headerMenuContainer, .header .headerNav {
+.headerMenu, .headerNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,24 +28,33 @@
 .header {
   background-image: url("../../assets/headerBackground.svg");
   background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   width: 95.7%;
-  height: 89px;
+  max-width: 1440;
+  height: 85px;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #F9F5FF;
+  font-size: 1rem;
   margin: 0 1.5rem;
 }
-.header .headerNav {
+
+.headerNav {
   flex-direction: row;
-  width: 74.6%;
+  width: 80%;
+  margin-left: 2.6rem;
   padding: 2px 64px;
   border-radius: 30px;
   background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
 }
-.header .headerNav .headerMenuContainer .headerMenu {
-  display: flex;
+
+.headerMenu {
+  width: 20rem;
 }
-.header .headerNav .headerLogo {
+
+.headerLogo {
   width: 1rem;
   height: auto;
 }

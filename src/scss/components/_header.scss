@@ -1,45 +1,43 @@
-@import '../utils/extends';
+@import "../utils/extends";
+@import "../utils/variables";
 
 .header {
-    background-image: url('../../assets/headerBackground.svg');
-     background-size: contain;
-    // background-position: center;
-    background-repeat: no-repeat;
-    
-    width: 95.7%;
-     height: 89px;
+   background-image: url("../../assets/headerBackground.svg");
+   background-size:contain;
+   background-position: center;
+   background-repeat: no-repeat;
 
-    box-sizing: border-box; 
-    margin: 0 1.5rem;
-    //overflow: hidden;
+  width: 95.7%;
+  max-width: 1440;
+  height: 85px;
 
-    .headerNav{
-        flex-direction: row;
-        @extend %flex;
-        width: 74.6%;
-        padding: 2px 64px;
-
-        border-radius: 30px;
-        background: rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(10px);
-
-        .headerMenuContainer {
-
-            @extend %flex;
-
-            .headerMenu {
-                display: flex;
-            }
-
-        }
-    
-        .headerLogo {
-    
-                width: 1rem;
-                height: auto;
-        }
-    }
-
-   
+  box-sizing: border-box;
+  font-family: $fontStack;
+  color: $ligthColor;
+  font-size: $fontSizeNormal;
+  margin: 0 1.5rem;
+  //overflow: hidden;
 }
 
+.headerNav {
+  flex-direction: row;
+  @extend %flex;
+  width: 80%;
+
+  margin-left: 2.6rem;
+  padding: 2px 64px;
+
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+.headerMenu {
+  @extend %flex;
+  width: 20rem;
+}
+
+.headerLogo {
+  width: 1rem;
+  height: auto;
+}
