@@ -2,30 +2,39 @@
 @import "../utils/variables";
 
 .header {
-   background-image: url("../../assets/headerBackground.svg");
-   background-size:contain;
-   background-position: center;
-   background-repeat: no-repeat;
+  background-image: url("../../assets/headerBackground.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 
-  width: 95.7%;
+  width: 100%;
   max-width: 1440;
-  height: 85px;
+  height: 89px;
 
   box-sizing: border-box;
   font-family: $fontStack;
   color: $ligthColor;
   font-size: $fontSizeNormal;
-  margin: 0 1.5rem;
+  //margin: 0 1.5rem;
+  //padding: 0 1rem;
+
+  display: flex;
+  align-items: center; // Centra verticalmente los elementos
+  justify-content: center; // Centra horizontalmente los elementos
   //overflow: hidden;
 }
 
 .headerNav {
   flex-direction: row;
-  @extend %flex;
-  width: 80%;
+  @extend %flexBetween;
+  align-items: center; // Centra verticalmente los elementos
+  //position:relative;
+  width: 100%;
+  height: 59px;
+  max-width: 1213px;
 
-  margin-left: 2.6rem;
-  padding: 2px 64px;
+  margin: 0 auto;
+  padding: 0 64px;
 
   border-radius: 30px;
   background: rgba(0, 0, 0, 0.25);
@@ -33,7 +42,7 @@
 }
 
 .headerMenu {
-  @extend %flex;
+  @extend %flexBetween;
   width: 20rem;
 }
 

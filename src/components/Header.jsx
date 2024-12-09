@@ -20,9 +20,9 @@ const Header = () => {
           <p>Portfolio</p>
         </li>
 
-        {/* <div className="headerLogo">
+        <div className="headerLogo">
           <img src={logo} alt="AINOVA Logo" />
-        </div> */}
+        </div>
         <div className="headerMenu">
           <p>Contacto</p>
           <Button text="INICIO" onClick={handleClick} />
