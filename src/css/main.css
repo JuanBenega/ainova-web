@@ -6,14 +6,18 @@
 }
 
 .button {
-  padding: 10px 20px;
-  background-color: #6200ea;
+  padding: 4px 12px;
   color: white;
-  border: none;
-  border-radius: 5px;
   font-family: "Inter", sans-serif;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: 184px;
+  height: 39px;
+  font-weight: 500;
+  font-size: 1.12rem;
+  border-radius: 16px;
+  border: 1px solid var(--linear, #a79fff);
+  background: var(--color-time, linear-gradient(180deg, #7e73ff 0%, #6941c6 100%));
 }
 .button:hover {
   background-color: #3700b3;
@@ -45,7 +49,7 @@
 .headerNav {
   flex-direction: row;
   align-items: center;
-  width: 100%;
+  width: 80%;
   height: 59px;
   max-width: 1213px;
   margin: 0 auto;
@@ -56,12 +60,31 @@
 }
 
 .headerMenu {
-  width: 20rem;
+  width: 320px;
 }
 
 .headerLogo {
-  width: 1rem;
+  display: grid;
+  justify-content: center;
+  width: 176px;
   height: auto;
+}
+
+.headerLogoIcon {
+  margin-top: 40px;
+  width: 103px;
+  height: 101px;
+  justify-self: center;
+}
+
+.headerNav, .headerMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroSection {
+  background-image: url("../../assets/heroBackground.png");
 }
 
 /*# sourceMappingURL=main.css.map */

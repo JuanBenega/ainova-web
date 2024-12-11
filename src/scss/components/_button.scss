@@ -1,14 +1,23 @@
-@import '../utils/variables';
+@import "../utils/variables";
 
 .button {
-  padding: 10px 20px;
-  background-color: $primaryColor;
+  padding: 4px 12px;
   color: white;
-  border: none;
-  border-radius: 5px;
   font-family: $fontStack;
   cursor: pointer;
   transition: background-color 0.3s;
+
+  width: 184px;
+  height: 39px;
+  font-weight: $fontWeigthButton;
+  font-size: $fontSizeButton;
+
+  border-radius: 16px;
+  border: 1px solid var(--linear, #a79fff);
+  background: var(
+    --color-time,
+    linear-gradient(180deg, #7e73ff 0%, #6941c6 100%)
+  );
 
   &:hover {
     background-color: $secondaryColor;

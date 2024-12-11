@@ -1,7 +1,8 @@
 import React from "react";
 
 //importación de componentes
-import Header from './components/Header'
+import Header from './components/Header';
+import Hero from "./components/Hero";
 import Button from "./components/Button";
 
 //importación de estilos
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <Header />
+    <Hero />
   );
 }
 

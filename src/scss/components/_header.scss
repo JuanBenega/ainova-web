@@ -29,7 +29,7 @@
   @extend %flexBetween;
   align-items: center; // Centra verticalmente los elementos
   //position:relative;
-  width: 100%;
+  width: 80%;
   height: 59px;
   max-width: 1213px;
 
@@ -43,10 +43,19 @@
 
 .headerMenu {
   @extend %flexBetween;
-  width: 20rem;
+  width: 320px;
 }
 
 .headerLogo {
-  width: 1rem;
+  display: grid;
+  justify-content: center;
+  width: 176px;
   height: auto;
+}
+
+.headerLogoIcon {
+  margin-top: 40px;
+  width: 103px;
+  height: 101px;
+  justify-self: center;
 }
