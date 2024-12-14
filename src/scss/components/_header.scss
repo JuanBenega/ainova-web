@@ -46,11 +46,22 @@
   width: 320px;
 }
 
+.headerLink {
+  &:hover {
+    scale: 110%;
+    transition: 400ms;
+  }
+}
 .headerLogo {
   display: grid;
   justify-content: center;
   width: 176px;
   height: auto;
+
+  &:hover {
+    scale: 110%;
+    transition: 400ms;
+  }
 }
 
 .headerLogoIcon {

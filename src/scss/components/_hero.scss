@@ -2,5 +2,23 @@
 @import "../utils/variables";
 
 .heroSection {
+    height: 100vh;
     background-image: url("../../assets/heroBackground.png");
+    font-family: $fontStack;
+    color: $titleColor;
+    font-size: $fontSizeNormal;
+
+    width: 100%;
+    max-width: 1440;
+
+    @extend %flexColumStart;
+
+}
+
+.heroContainer {
+
+}
+
+.heroTitle {
+    font-size: $fontSizeTitle;
 }

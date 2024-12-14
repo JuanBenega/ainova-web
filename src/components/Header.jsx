@@ -1,5 +1,3 @@
-import "../scss/components/_header.scss";
-
 import logo from "../assets/ainovaLogo.png";
 import logoText from "../assets/ainovaLogoText.png"
 
@@ -16,9 +14,9 @@ const Header = () => {
       
       <nav className="headerNav">
         <li className="headerMenu">
-          <p>Nosotros</p>
-          <p>Servicios</p>
-          <p>Portfolio</p>
+          <p className="headerLink">Nosotros</p>
+          <p className="headerLink">Servicios</p>
+          <p className="headerLink">Portfolio</p>
         </li>
 
         <div className="headerLogo">
@@ -27,7 +25,7 @@ const Header = () => {
         </div>
 
         <div className="headerMenu">
-          <p>Contacto</p>
+          <p className="headerLink">Contacto</p>
           <Button text="INICIO" onClick={handleClick} />
         </div>
       </nav>

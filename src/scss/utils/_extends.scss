@@ -1,11 +1,17 @@
 %flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 %flexBetween {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flexColumStart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
