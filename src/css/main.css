@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
 }
 
 .button {
@@ -23,11 +24,6 @@
   font-family: "Inter", sans-serif;
   cursor: pointer;
   transition: background-color 0.3s;
-  width: 184px;
-  height: 39px;
-  font-weight: 500;
-  font-size: 1.12rem;
-  border-radius: 16px;
   border: 1px solid var(--linear, #a79fff);
   background: var(--color-time, linear-gradient(180deg, #7e73ff 0%, #6941c6 100%));
 }
@@ -51,6 +47,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
 }
 
 .header {
@@ -126,6 +123,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
 }
 
 .heroSection {
@@ -143,16 +141,24 @@
 .heroContainer {
   max-width: 830px;
   text-align: center;
-  padding-top: 10vh;
 }
 
 .heroTitle {
   font-size: 4rem;
   font-weight: 300;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .titleRemark {
   font-weight: 900;
+}
+
+.heroText {
+  color: #42307D;
+  font-size: 1.12rem;
+  max-width: 600px;
+  margin-bottom: 150px;
 }
 
 /*# sourceMappingURL=main.css.map */

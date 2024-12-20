@@ -24,17 +24,25 @@
     max-width: 830px;
 
     text-align: center;
-    padding-top: 10vh;
+    //padding-top: 5vh;
     
 }
 
 .heroTitle {
     font-size: $fontSizeTitle;
     font-weight: $fontWeigthTitle;
-
+    margin-bottom: 0px;
+    margin-top: 0px;
 
 }
 
 .titleRemark {
     font-weight: $fontWeigthStrong;
+}
+
+.heroText {
+    color: $titleTextColor;
+    font-size: $fontSize18;
+    max-width: 600px;
+    margin-bottom: 150px;
 }

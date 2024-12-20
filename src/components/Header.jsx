@@ -26,7 +26,7 @@ const Header = () => {
 
         <div className="headerMenu">
           <p className="headerLink">Contacto</p>
-          <Button text="INICIO" onClick={handleClick} />
+          <Button text="INICIO" onClick={handleClick} size="18px" Weight="500" width="183px" height="39px" radius="16px" />
         </div>
       </nav>
     </header>

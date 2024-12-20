@@ -1,18 +1,25 @@
+//Colores del proyecto
 $primaryColor: #6200ea;
 $secondaryColor: #3700b3;
 $ligthColor: #F9F5FF;
 $titleColor: #6941C6;
+$titleTextColor: #42307D;
 
+//Tipografía del proyecto
 //$fontStack: 'Roboto', sans-serif;
 $fontStack: 'Inter', sans-serif;
 
+//Tamaño de fuentes
 $fontSizeNormal: 1rem; 
 $fontSizeLarge: 1.5rem; 
 $fontSizeSmall: 0.875rem;
-$fontSizeButton: 1.12rem;
 $fontSizeTitle: 4rem;
+$fontSize18: 1.12rem;
+$fontSize23: 1.44rem;
 
+//Espesores de fuentes
 $fontWeigthNormal: 400;
-$fontWeigthButton: 500;
+$fontWeigth500: 500;
 $fontWeigthTitle: 300;
 $fontWeigthStrong:900;
+$fontWeigth700: 700;
