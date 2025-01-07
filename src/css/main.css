@@ -1,5 +1,5 @@
 @import 'normalize.css';
-.heroSection {
+.usSection, .heroSection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.heroContainer {
+.usTitle, .heroContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +31,7 @@
   background-color: #3700b3;
 }
 
-.heroSection {
+.usSection, .heroSection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@
   align-items: center;
 }
 
-.heroContainer {
+.usTitle, .heroContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +107,7 @@
   justify-self: center;
 }
 
-.heroSection {
+.usSection, .heroSection {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,7 +119,7 @@
   align-items: center;
 }
 
-.heroContainer {
+.usTitle, .heroContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,6 +159,32 @@
   font-size: 1.12rem;
   max-width: 600px;
   margin-bottom: 150px;
+}
+
+.usSection {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: #6941C6;
+}
+
+.badge {
+  border-radius: 16px;
+  background: var(--Brand-50, #F9F5FF);
+  mix-blend-mode: multiply;
+  width: fit-content;
+  padding: 4px 12px;
+  color: #42307D;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.usTitleText {
+  font-size: 1.44rem;
+  font-weight: 400;
+  color: #42307D;
 }
 
 /*# sourceMappingURL=main.css.map */

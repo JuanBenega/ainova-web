@@ -3,6 +3,8 @@ import React from "react";
 //importación de componentes
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Us from "./components/Us";
+
 import Button from "./components/Button";
 
 //importación de estilos
@@ -18,6 +20,7 @@ function App() {
     <div className="app">
       <Header />
       <Hero />
+      <Us />
     </div>
   );
 }
