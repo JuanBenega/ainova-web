@@ -5,13 +5,14 @@
     height: 100vh;
 
     background-image: url("../../assets/heroBackground.png");
-    background-size: cover;
-    //background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: $fontStack;
     color: $titleColor;
     font-size: $fontSizeNormal;
 
-    width: 100%;
+    width: 100v;
     max-width: 1440px;
     padding-left: 10%;
 
