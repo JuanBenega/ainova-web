@@ -1,13 +1,20 @@
 .usSection {
-  @extend %flex;
+  @extend %flexColumCenter;
   text-align: center;
   font-family: $fontStack;
   color: $titleColor;
+  //width: 100v;
+  //max-width: 1440px;
+//padding-left: 10%;
+}
+
+.usContainer {
+  
 }
 
 .usTitle {
     @extend %flexColumCenter;
-
+    max-width: 1216px;
 }
 .badge {
   border-radius: 16px;
@@ -27,4 +34,13 @@
     font-size: $fontSize23;
     font-weight: $fontWeigthNormal;
     color: $titleTextColor;
+}
+
+.usCards {
+  background: var(--Gray-50, $backUsCard);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $px32;
+  //padding-left: $px112;
 }

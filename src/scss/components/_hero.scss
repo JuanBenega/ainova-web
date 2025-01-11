@@ -11,10 +11,13 @@
     font-family: $fontStack;
     color: $titleColor;
     font-size: $fontSizeNormal;
+    border: 2px;
+    border-color: black;
+    border-style: outset;
 
-    width: 100v;
-    max-width: 1440px;
-    padding-left: 10%;
+    //width: 100v;
+    //max-width: 1440px;
+    //padding-left: 10%;
 
     @extend %flex;
 

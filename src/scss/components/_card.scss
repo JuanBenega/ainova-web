@@ -1,0 +1,15 @@
+.cardContainer {
+    @extend %flexColumCenter;
+    width: 384px;
+    height: 178px;
+    padding-top: $px20;
+}
+
+.cardTitle {
+    font-size: $fontSize20;
+    font-weight: $fontWeigth500;
+}
+
+.cardText {
+    color: $textUsCard;
+}
