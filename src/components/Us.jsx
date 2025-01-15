@@ -1,6 +1,6 @@
 import Card from "./Card";
 import Carousel from "./Carousel";
-
+import SectionTitle from "./SectionTitle";
 
 import iconTeam from "../assets/iconTeam.png";
 import iconGive from "../assets/iconGive.png";
@@ -44,16 +44,22 @@ const Us = () => {
   ];
 
   return (
-    <div className="usSection">
-      <div className="usContainer">
-        <section className="usTitle">
-          <p className="badge">Nosotros</p>
-          <h1 className="title">Nuestro equipo, nuestra historia</h1>
-          <p className="usTitleText">
-            Descubre nuestra pasión por la tecnología y cómo transformamos
-            negocios
-          </p>
-        </section>
+    <div className="section">
+      <div className="container">
+        {/* <section className="usTitle">
+        <p className="badge">Nosotros</p>
+        <h1 className="title">Nuestro equipo, nuestra historia</h1>
+        <p className="usTitleText">
+          Descubre nuestra pasión por la tecnología y cómo transformamos
+          negocios
+        </p>
+      </section> */}
+
+        <SectionTitle
+          badge="Nosotros"
+          title="Nuestro equipo, nuestra historia"
+          text="Descubre nuestra pasión por la tecnología y cómo transformamos negocios"
+        />
       </div>
       <div className="usCardContainer">
         <section className="usCards">
