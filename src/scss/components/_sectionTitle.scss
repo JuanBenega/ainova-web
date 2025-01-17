@@ -1,0 +1,23 @@
+.titleSection {
+    @extend %flexColumCenter;
+    max-width: 1204px;
+  }
+  .badge {
+    border-radius: 16px;
+    background: var(--Brand-50, $ligthColor);
+    mix-blend-mode: multiply;
+    width: fit-content;
+    padding: 4px 12px;
+    color: $titleTextColor;
+  }
+  
+  .title {
+    font-size: $fontSize48;
+    font-weight: $fontWeigth600;
+  }
+  
+  .titleText {
+    font-size: $fontSize23;
+    font-weight: $fontWeigthNormal;
+    color: $titleTextColor;
+  }

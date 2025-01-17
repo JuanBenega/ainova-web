@@ -4,11 +4,13 @@ import React from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Us from "./components/Us";
+import Values from "./components/Values";
 
 import Button from "./components/Button";
 
 //importación de estilos
 import "./scss/main.scss";
+
 
 function App() {
   //declaración de funciones
@@ -21,6 +23,7 @@ function App() {
       <Header />
       <Hero />
       <Us />
+      <Values />
     </div>
   );
 }
