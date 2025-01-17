@@ -1,0 +1,104 @@
+.valuesContainer {
+  @extend %flexColumCenter;
+}
+
+.valuesPopup {
+  height: $px670;
+  width: 100vw;
+  background-color: $backValues;
+  position: relative;
+}
+
+.valuesBack {
+  position: absolute; // La imagen será posicionada respecto al contenedor padre
+  bottom: 0; // Ubica la imagen en la parte baja del contenedor
+  left: 50%; // Centra horizontalmente la imagen
+  transform: translateX(-50%); // Ajusta el centrado horizontal exacto
+}
+
+.balloon {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    width: $px320;
+    background: rgba(255, 255, 255, 0.90);
+    padding: 16px;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.4;
+    transform: translate(-50%, 0); // Centrado horizontal
+    opacity: 0; // Inicialmente invisible
+    animation: moveUp 2s ease-out forwards; // Animación al cargar
+  }
+
+  .ballonText {
+    margin-left: 10px;
+  }
+  
+  .balloon small {
+    color: gray;
+    font-size: 12px;
+  }
+
+  .balloon-1 {
+    bottom: 85%; // Posición final en porcentaje relativo al contenedor
+    left: 35%;
+    animation-delay: 0.5s; // Retardo para que este globo aparezca primero
+  }
+  
+  .balloon-2 {
+    bottom: 67%;
+    left: 35%;
+    animation-delay: 1s;
+  }
+  
+  .balloon-3 {
+    bottom: 49%;
+    left: 35%;
+    animation-delay: 1.5s;
+  }
+  
+  .balloon-4 {
+    bottom: 31%;
+    left: 35%;
+    animation-delay: 2s;
+  }
+
+  .balloon-5 {
+    bottom: 60%; // Posición final en porcentaje relativo al contenedor
+    left: 65%;
+    animation-delay: 2.5s; // Retardo para que este globo aparezca primero
+  }
+  
+  .balloon-6 {
+    bottom: 42%;
+    left: 65%;
+    animation-delay: 3s;
+  }
+  
+  .balloon-7 {
+    bottom: 24%;
+    left: 65%;
+    animation-delay: 3.5s;
+  }
+  
+  .balloon-8 {
+    bottom: 6%;
+    left: 65%;
+    animation-delay: 4s;
+  }
+
+  @keyframes moveUp {
+    0% {
+      transform: translate(-50%, 100%); // Empieza fuera del viewport (parte inferior)
+      opacity: 0; // Totalmente invisible
+    }
+    100% {
+      transform: translate(-50%, 0); // Llega a su posición final
+      opacity: 1; // Totalmente visible
+    }
+  }
+  
