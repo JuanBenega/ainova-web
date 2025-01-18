@@ -18,7 +18,7 @@
 
 .balloon {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     position: absolute;
     width: $px320;
@@ -29,9 +29,12 @@
     text-align: left;
     font-size: 14px;
     line-height: 1.4;
-    transform: translate(-50%, 0); // Centrado horizontal
+    transform: translate(-50%, 100px); // Empieza desplazado hacia abajo
     opacity: 0; // Inicialmente invisible
-    animation: moveUp 2s ease-out forwards; // Animación al cargar
+  }
+
+  .animate {
+    animation: moveUp 2s ease-out forwards; // Llega a su posición final
   }
 
   .ballonText {
