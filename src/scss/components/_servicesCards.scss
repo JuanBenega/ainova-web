@@ -1,6 +1,5 @@
 .servicesCard {
-    background-color: #fff;
-    border-radius: 15px;
+    background-color: $bakWordsCarousel;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     display: flex;
@@ -8,6 +7,7 @@
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
+    max-width: 300px;
 
   
     &:hover {
@@ -47,7 +47,7 @@
     }
   
     .servicesCardFooter {
-      margin-top: 1rem;
+      //margin-top: 1rem;
   
       .servicesCardBottomIcon {
         width: 40px;

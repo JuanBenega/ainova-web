@@ -1,0 +1,42 @@
+.wordsCarousel {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+  .wordsRow {
+    display: inline-flex;
+    gap: 2rem;
+    animation: scroll 30s linear infinite;
+
+    &:nth-child(2) {
+        animation-delay: -5s;
+      }
+
+    .word {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: linear-gradient(
+        274deg,
+        $titleColor 0%,
+        $bakWordsCarousel 100%
+      );
+      color: #fff;
+      font-weight: bold;
+      font-size: $fontSize32;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      white-space: nowrap; // Evita que las palabras se dividan
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%); // Empieza desde el inicio
+  }
+  to {
+    transform: translateX(-100%); // Mueve el contenido hacia la izquierda
+  }
+}

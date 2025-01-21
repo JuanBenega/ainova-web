@@ -8,6 +8,7 @@ import imgCardManagment from "../assets/serviceCardManagment.png";
 import imgCardUser from "../assets/serviceCardUser.png";
 import imgCardSocial from "../assets/serviceCardSocial.png";
 import iconCards from "../assets/serviceCardIcon.png";
+import WordsCarousel from "./WordsCarousel";
 
 const Services = () => {
     const servicesData = [
@@ -57,7 +58,7 @@ const Services = () => {
       ];
   
     return (
-    <div className="section container">
+    <div id="services" className="section container">
       <SectionTitle
         badge="Servicios"
         title="Transforma tu negocio con más tecnología"
@@ -76,6 +77,7 @@ const Services = () => {
           />
         ))}
       </div>
+      <WordsCarousel />
     </div>
   );
 };
