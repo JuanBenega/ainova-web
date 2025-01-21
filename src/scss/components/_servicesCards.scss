@@ -1,0 +1,58 @@
+.servicesCard {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+
+  
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+  
+    .servicesCardHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      flex-direction: column;
+  
+      .servicesCardCategory {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: $titleTextColor;
+      }
+  
+      .servicesCardIcon {
+        width: auto;
+        height: auto;
+      }
+    }
+  
+    .servicesCardTitle {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      color: $titleColor;
+    }
+  
+    .servicesCardDescription {
+      font-size: 0.9rem;
+      color: $textUsCard;
+      flex-grow: 1;
+    }
+  
+    .servicesCardFooter {
+      margin-top: 1rem;
+  
+      .servicesCardBottomIcon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  

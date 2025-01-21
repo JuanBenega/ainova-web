@@ -5,6 +5,8 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Us from "./components/Us";
 import Values from "./components/Values";
+import Services from "./components/Services";
+
 
 import Button from "./components/Button";
 
@@ -24,6 +26,7 @@ function App() {
       <Hero />
       <Us />
       <Values />
+      <Services />
     </div>
   );
 }
