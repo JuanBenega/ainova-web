@@ -39,3 +39,10 @@ $px32: 2rem;
 $px12: 0.75rem;
 $px670: 41.9rem;
 $px320: 20rem;
+
+//Definición de breakpoints
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+);

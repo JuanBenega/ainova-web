@@ -17,91 +17,141 @@
 }
 
 .balloon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: $px320;
-    background: rgba(255, 255, 255, 0.90);
-    padding: 16px;
-    border-radius: 8px;
-    backdrop-filter: blur(8px);
-    text-align: left;
-    font-size: 14px;
-    line-height: 1.4;
-    transform: translate(-50%, 100px); // Empieza desplazado hacia abajo
-    opacity: 0; // Inicialmente invisible
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: $px320;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 16px;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.4;
+  transform: translate(-50%, 100px); // Empieza desplazado hacia abajo
+  opacity: 0; // Inicialmente invisible
+}
 
-  .animate {
-    animation: moveUp 2s ease-out forwards; // Llega a su posición final
-  }
+.animate {
+  animation: moveUp 2s ease-out forwards; // Llega a su posición final
+}
 
-  .ballonText {
-    margin-left: 10px;
-  }
-  
-  .balloon small {
-    color: gray;
-    font-size: 12px;
-  }
+.ballonText {
+  margin-left: 10px;
+}
 
-  .balloon-1 {
-    bottom: 85%; // Posición final en porcentaje relativo al contenedor
-    left: 35%;
-    animation-delay: 0.5s; // Retardo para que este globo aparezca primero
-  }
-  
-  .balloon-2 {
-    bottom: 67%;
-    left: 35%;
-    animation-delay: 1s;
-  }
-  
-  .balloon-3 {
-    bottom: 49%;
-    left: 35%;
-    animation-delay: 1.5s;
-  }
-  
-  .balloon-4 {
-    bottom: 31%;
-    left: 35%;
-    animation-delay: 2s;
-  }
+.balloon small {
+  color: gray;
+  font-size: 12px;
+}
 
-  .balloon-5 {
-    bottom: 60%; // Posición final en porcentaje relativo al contenedor
-    left: 65%;
-    animation-delay: 2.5s; // Retardo para que este globo aparezca primero
+.balloon-1 {
+  bottom: 85%; // Posición final en porcentaje relativo al contenedor
+  left: 35%;
+  animation-delay: 0.5s; // Retardo para que este globo aparezca primero
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    left: 50%;
   }
-  
-  .balloon-6 {
-    bottom: 42%;
-    left: 65%;
+}
+
+.balloon-2 {
+  bottom: 67%;
+  left: 35%;
+  animation-delay: 1s;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    left: 50%;
     animation-delay: 3s;
+    bottom: 65%;
   }
-  
-  .balloon-7 {
-    bottom: 24%;
-    left: 65%;
-    animation-delay: 3.5s;
-  }
-  
-  .balloon-8 {
-    bottom: 6%;
-    left: 65%;
-    animation-delay: 4s;
-  }
+}
 
-  @keyframes moveUp {
-    0% {
-      transform: translate(-50%, 100%); // Empieza fuera del viewport (parte inferior)
-      opacity: 0; // Totalmente invisible
-    }
-    100% {
-      transform: translate(-50%, 0); // Llega a su posición final
-      opacity: 1; // Totalmente visible
-    }
+.balloon-3 {
+  bottom: 49%;
+  left: 35%;
+  animation-delay: 1.5s;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    left: 50%;
+    animation-delay: 6s;
+    bottom: 45%;
   }
-  
+}
+
+.balloon-4 {
+  bottom: 31%;
+  left: 35%;
+  animation-delay: 2s;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    left: 50%;
+    animation-delay: 9s;
+    bottom: 25%;
+  }
+}
+
+.balloon-5 {
+  bottom: 60%; // Posición final en porcentaje relativo al contenedor
+  left: 65%;
+  animation-delay: 2.5s; // Retardo para que este globo aparezca primero
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    left: 50%;
+    animation-delay: 12s;
+    bottom: 75%;
+  }
+}
+
+.balloon-6 {
+  bottom: 42%;
+  left: 65%;
+  animation-delay: 3s;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    left: 50%;
+    animation-delay: 15s;
+    bottom: 55%;
+  }
+}
+
+.balloon-7 {
+  bottom: 24%;
+  left: 65%;
+  animation-delay: 3.5s;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    left: 50%;
+    animation-delay: 18s;
+    bottom:35%;
+  }
+}
+
+.balloon-8 {
+  bottom: 6%;
+  left: 65%;
+  animation-delay: 4s;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    left: 50%;
+    animation-delay: 21s;
+    bottom: 15%;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translate(
+      -50%,
+      100%
+    ); // Empieza fuera del viewport (parte inferior)
+    opacity: 0; // Totalmente invisible
+  }
+  100% {
+    transform: translate(-50%, 0); // Llega a su posición final
+    opacity: 1; // Totalmente visible
+  }
+}
+
+

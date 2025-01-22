@@ -20,6 +20,12 @@ const Header = () => {
           <p className="headerLink">Portfolio</p>
         </li> 
 
+        {/* <li className="headerMenu">
+          <Link to={'/us'} className="headerLink">Nosotros</Link>
+          <Link to={'/services'} className="headerLink">Servicios</Link>
+          <Link to={'/portfolio'} className="headerLink">Portfolio</Link>
+        </li> */}
+
         <div className="headerLogo">
           <img className="headerLogoIcon" src={logo} alt="AINOVA Logo" />
           <img className="headerLogoText" src={logoText} alt="AINOVA Logo" />

@@ -30,6 +30,10 @@
       white-space: nowrap; // Evita que las palabras se dividan
     }
   }
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    max-width: 100vw; // Ajuste para móviles
+  }
 }
 
 @keyframes scroll {
