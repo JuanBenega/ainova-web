@@ -1,43 +1,46 @@
-@import "../utils/extends";
-@import "../utils/variables";
+//@import "../utils/extends";
+//@import "../utils/variables";
 
 .heroSection {
-    height: 100vh;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 
-    background-image: url("../../assets/heroBackground.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: $fontStack;
-    color: $titleColor;
-    font-size: $fontSizeNormal;
-    @extend %flex;
-
+  //background-image: url("../../assets/heroBackground.png");
+  //background-size: contain;
+  //background-repeat: no-repeat;
+  //background-position: center;
+  font-family: $fontStack;
+  color: $titleColor;
+  font-size: $fontSizeNormal;
+  @extend %flex;
 }
 
 .heroContainer {
-    @extend %flexColumCenter;
-    max-width: 830px;
+  @extend %flexColumCenter;
+  max-width: 830px;
 
-    text-align: center;
-    //padding-top: 5vh;
-    
+  text-align: center;
+  //padding-top: 5vh;
+  position: relative;
+  z-index: 1;
+  padding-top: 40vh;
 }
 
 .heroTitle {
-    font-size: $fontSizeTitle;
-    font-weight: $fontWeigthTitle;
-    margin-bottom: 0px;
-    margin-top: 0px;
+  font-size: $fontSizeTitle;
+  font-weight: $fontWeigthTitle;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .titleRemark {
-    font-weight: $fontWeigthStrong;
+  font-weight: $fontWeigthStrong;
 }
 
 .heroText {
-    color: $titleTextColor;
-    font-size: $fontSize18;
-    max-width: 600px;
-    margin-bottom: 150px;
+  color: $titleTextColor;
+  font-size: $fontSize18;
+  max-width: 600px;
+  margin-bottom: 150px;
 }

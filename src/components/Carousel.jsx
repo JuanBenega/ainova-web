@@ -1,9 +1,9 @@
 import Slider from "react-slick";
 
-import img1 from "../assets/imgEnjoy.png";
+import img1 from "../assets/imgBelieve.png";
 import img2 from "../assets/imgGrow.png";
 import img3 from "../assets/imgEnjoy.png";
-import img4 from "../assets/imgGrow.png";
+import img4 from "../assets/imgWork.png";
 import img5 from "../assets/imgPasion.png";
 
 const Carousel = () => {
