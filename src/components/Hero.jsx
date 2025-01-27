@@ -1,5 +1,4 @@
 import Button from "./Button";
-import HeroBackground from "./HeroBackground";
 
 const Hero = () => {
 
@@ -9,7 +8,6 @@ const Hero = () => {
 
   return (
     <div className="heroSection">
-      <HeroBackground />
       <div className="heroContainer">
         <p className="heroTitle">
           Innovación y crecimiento <span className="titleRemark">PARA TU EMPRESA</span>

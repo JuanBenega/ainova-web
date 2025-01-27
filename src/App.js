@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Routes , Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HeroBackgroundSVG from "./components/HeroBackgroundSVG";
 
 //importación de componentes
 import Header from "./components/Header";
@@ -20,25 +21,27 @@ function App() {
   };
 
   return (
-      <div className="app">
-        <Header />
-          <Hero />
-          <Us />
-          <Values />
-          <Services />
-      </div>
+    <div className="app">
+      <HeroBackgroundSVG />
 
-// <BrowserRouter>
-// <div className="app">
-//   <Header />
-//   <Routes>
-//     <Route path='/' element= {<Hero />} />
-//     <Route path='/us' element= {<Us />} />
-//     <Route path='/values' element= {<Values />} />
-//     <Route path='/services' element= {<Services />} />
-//   </Routes>
-// </div>
-// </BrowserRouter>
+      <Header />
+      <Hero />
+      <Us />
+      <Values />
+      <Services />
+    </div>
+
+    // <BrowserRouter>
+    // <div className="app">
+    //   <Header />
+    //   <Routes>
+    //     <Route path='/' element= {<Hero />} />
+    //     <Route path='/us' element= {<Us />} />
+    //     <Route path='/values' element= {<Values />} />
+    //     <Route path='/services' element= {<Services />} />
+    //   </Routes>
+    // </div>
+    // </BrowserRouter>
   );
 }
 
