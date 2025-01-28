@@ -1,4 +1,29 @@
+import React, { useState, useEffect } from "react";
+
 const HeroBackgroundSVG = () => {
+  const [randomTranslate, setRandomTranslate] = useState({
+    fromX: 0,
+    fromY: 0,
+    toX: 0,
+    toY: 0,
+  });
+
+  useEffect(() => {
+    // Generar valores aleatorios para las posiciones de traslación
+    const randomFromX = Math.floor(Math.random() * 200) - 100; // De -100 a 100
+    const randomFromY = Math.floor(Math.random() * 200) - 100; // De -100 a 100
+    const randomToX = Math.floor(Math.random() * 400) - 200; // De -200 a 200
+    const randomToY = Math.floor(Math.random() * 400) - 200; // De -200 a 200
+
+    setRandomTranslate({
+      fromX: randomFromX,
+      fromY: randomFromY,
+      toX: randomToX,
+      toY: randomToY,
+    });
+  }, []); // Ejecutar solo al cargar la página
+  
+  
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -60,85 +85,24 @@ const HeroBackgroundSVG = () => {
           type="rotate"
           from="0 400 300"
           to="360 400 300"
-          dur="40s"
+          dur="10s"
           repeatCount="indefinite"
         />
+        {/* Traslación del grupo con valores aleatorios */}
         <animateTransform
           attributeName="transform"
           type="translate"
-          from="-100 -100"
-          to="200 200"
-          dur="40s"
+          from={`${randomTranslate.fromX} ${randomTranslate.fromY}`}
+          to={`${randomTranslate.toX} ${randomTranslate.toY}`}
+          dur="10s"
           repeatCount="indefinite"
           additive="sum"
         />
-        <circle cx="200" cy="200" r="400" fill="url(#grad1)">
-          <animate
-            attributeName="cx"
-            from="200"
-            to="600"
-            dur="25s"
-            repeatCount="indefinite"
-          />
-          <animate
-            attributeName="cy"
-            from="200"
-            to="400"
-            dur="25s"
-            repeatCount="indefinite"
-          />
-        </circle>
 
-        <circle cx="600" cy="200" r="400" fill="url(#grad2)">
-          <animate
-            attributeName="cx"
-            from="600"
-            to="400"
-            dur="25s"
-            repeatCount="indefinite"
-          />
-          <animate
-            attributeName="cy"
-            from="200"
-            to="400"
-            dur="25s"
-            repeatCount="indefinite"
-          />
-        </circle>
-
-        <circle cx="200" cy="400" r="400" fill="url(#grad3)">
-          <animate
-            attributeName="cx"
-            from="200"
-            to="600"
-            dur="25s"
-            repeatCount="indefinite"
-          />
-          <animate
-            attributeName="cy"
-            from="400"
-            to="200"
-            dur="25s"
-            repeatCount="indefinite"
-          />
-        </circle>
-
-        <circle cx="600" cy="400" r="400" fill="url(#grad4)">
-          <animate
-            attributeName="cx"
-            from="600"
-            to="400"
-            dur="25s"
-            repeatCount="indefinite"
-          />
-          <animate
-            attributeName="cy"
-            from="400"
-            to="200"
-            dur="25s"
-            repeatCount="indefinite"
-          />
-        </circle>
+        <circle cx="200" cy="200" r="450" fill="url(#grad1)" />
+        <circle cx="400" cy="200" r="450" fill="url(#grad2)" />
+        <circle cx="200" cy="400" r="450" fill="url(#grad3)" />
+        <circle cx="400" cy="400" r="450" fill="url(#grad4)" />
       </g>
     </svg>
   );

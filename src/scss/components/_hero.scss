@@ -1,14 +1,11 @@
-//@import "../utils/extends";
-//@import "../utils/variables";
-
 .heroSection {
   position: relative;
   height: 100vh;
   overflow: hidden;
   font-family: $fontStack;
   color: $titleColor;
-  font-size: $fontSizeNormal;
   @extend %flex;
+
 }
 
 .heroContainer {
@@ -16,16 +13,20 @@
   max-width: 830px;
 
   text-align: center;
-  //padding-top: -10vh;
-  position: relative;
-  z-index: 1;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    max-width: 90%;
+  }
 }
 
 .heroTitle {
   font-size: $fontSizeTitle;
   font-weight: $fontWeigthTitle;
-  margin-bottom: 0px;
-  margin-top: 0px;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    font-size: $fontSize26;
+    font-weight: $fontWeigth600;
+  }
 }
 
 .titleRemark {
@@ -37,4 +38,8 @@
   font-size: $fontSize18;
   max-width: 600px;
   margin-bottom: 150px;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    max-width: 90%;
+  }
 }
