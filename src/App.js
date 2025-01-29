@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import Us from "./components/Us";
 import Values from "./components/Values";
 import Services from "./components/Services";
+import Portfolio from "./components/Portfolio";
 
 import Button from "./components/Button";
 
@@ -26,6 +27,7 @@ function App() {
       <Us />
       <Values />
       <Services />
+      <Portfolio />
     </div>
   );
 }
