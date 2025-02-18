@@ -1,35 +1,35 @@
-.portfolioCarousel {
+.mySwiper {
+  width: 90%; // Para que no se vea tan grande
   max-width: 1200px;
+  height: 400px; // Ajustamos altura
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.mySwiper img {
+  width: 100%;
   height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
 
-  .carousel .slide img {
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transform: scale(0.6); // Reduce el tamaño de las imágenes laterales
-    transition: transform 1s ease, opacity 5s ease; // Suaviza la transición
-    //opacity: 0.6; // Reduce la opacidad de las imágenes laterales
-  }
+/* Ajuste para mejorar el efecto Coverflow */
+.swiper-slide {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
 
-  .carousel .slide img:hover {
-    transform: scale(1.05); // Amplía la imagen al hacer hover
-  }
+.swiper-slide-active {
+  transform: scale(1.15); // La imagen central se agranda
+}
 
-  .carousel .control-arrow {
-    background: none;
-    font-size: 5rem;
-    color: #6a11cb; // Color de las flechas
-  }
+.swiper-slide-prev,
+.swiper-slide-next {
+  opacity: 0.7; // Hacemos que las imágenes laterales sean más visibles
+  transform: scale(0.8); // Reducimos el tamaño de las imágenes laterales
+}
 
-  .carousel .dot {
-    background-color: #ccc;
-  }
-
-  .carousel .dot.selected {
-    background-color: #6a11cb; // Color del punto activo
-  }
-  .carousel .slide.selected img {
-    transform: scale(1); // Agranda la imagen central
-    z-index: 2; // Asegura que la imagen central esté encima de las otras
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); // Sombra más destacada
-  }
+/* Ajuste de los puntos de paginación */
+.swiper-pagination {
+  bottom: -20px !important;
 }
