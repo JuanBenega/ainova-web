@@ -1,0 +1,69 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Controla el ancho máximo del carrusel */
+    margin: 0 auto;
+    overflow: hidden; /* Oculta los elementos fuera de la vista */
+  
+    .carouselSlides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      transform: translateX(calc(-100% * var(--current-index))); /* Corrige el cálculo del desplazamiento */
+    }
+  
+    .carouselSlide {
+      flex: 0 0 100%; /* Cada slide ocupa exactamente el ancho del carrusel */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        width: 100%; /* Ajusta la imagen al ancho del slide */
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+    }
+  
+    .carouselArrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: #6a11cb;
+      z-index: 1;
+  
+      &.left {
+        left: 10px;
+      }
+  
+      &.right {
+        right: 10px;
+      }
+    }
+  
+    .carouselDots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+  
+      .dot {
+        width: 10px;
+        height: 10px;
+        background-color: #ccc;
+        border-radius: 50%;
+        cursor: pointer;
+  
+        &.active {
+          background-color: #6a11cb;
+        }
+      }
+    }
+  }
+    
