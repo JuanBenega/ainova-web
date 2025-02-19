@@ -1,7 +1,7 @@
 import SectionTitle from "./SectionTitle";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 
 import slide1 from "../assets/projectSlide1.png";
 import slide2 from "../assets/projectSlide2.png";
@@ -25,8 +25,8 @@ const Portfolio = () => {
       loop={true}
       coverflowEffect={{
         rotate: 25, // Menos inclinación
-        stretch: 50, // Separación de los slides
-        depth: 150, // Más profundidad
+        stretch: 10, // Separación de los slides
+        depth: 500, // Más profundidad
         modifier: 1,
         slideShadows: false, // Quitamos sombras para mejor estética
       }}

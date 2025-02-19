@@ -2,6 +2,7 @@
     @extend %flexColumCenter;
     max-width: 1204px;
   }
+
   .badge {
     border-radius: 16px;
     background: var(--Brand-50, $ligthColor);
@@ -14,10 +15,20 @@
   .title {
     font-size: $fontSize48;
     font-weight: $fontWeigth600;
+
+    @media (max-width: map-get($breakpoints, mobile)) {
+      font-size: $fontSize18;
+      font-weight: $fontWeigth600;
+    }
   }
   
   .titleText {
     font-size: $fontSize23;
     font-weight: $fontWeigthNormal;
     color: $titleTextColor;
+
+    @media (max-width: map-get($breakpoints, mobile)) {
+      font-size: $fontSize18;
+      font-weight: $fontWeigth600;
+    }
   }

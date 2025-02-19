@@ -9,6 +9,7 @@ import Us from "./components/Us";
 import Values from "./components/Values";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
+import Ecosystem from "./components/Ecosystem";
 
 import Button from "./components/Button";
 
@@ -31,6 +32,7 @@ function App() {
       <Values />
       <Services />
       <Portfolio />
+      <Ecosystem />
     </div>
 
     // <BrowserRouter>
