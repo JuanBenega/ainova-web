@@ -50,4 +50,8 @@
   padding: $px20 0 $px20 $px112;
   //padding-left: $px112;
   max-width: 1216px;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    padding: 0;
+  }
 }

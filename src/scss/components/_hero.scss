@@ -1,43 +1,45 @@
-@import "../utils/extends";
-@import "../utils/variables";
-
 .heroSection {
-    height: 100vh;
-
-    background-image: url("../../assets/heroBackground.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: $fontStack;
-    color: $titleColor;
-    font-size: $fontSizeNormal;
-    @extend %flex;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: $fontStack;
+  color: $titleColor;
+  @extend %flex;
 
 }
 
 .heroContainer {
-    @extend %flexColumCenter;
-    max-width: 830px;
+  @extend %flexColumCenter;
+  max-width: 830px;
 
-    text-align: center;
-    //padding-top: 5vh;
-    
+  text-align: center;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    max-width: 90%;
+  }
 }
 
 .heroTitle {
-    font-size: $fontSizeTitle;
-    font-weight: $fontWeigthTitle;
-    margin-bottom: 0px;
-    margin-top: 0px;
+  font-size: $fontSizeTitle;
+  font-weight: $fontWeigthTitle;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    font-size: $fontSize26;
+    font-weight: $fontWeigth600;
+  }
 }
 
 .titleRemark {
-    font-weight: $fontWeigthStrong;
+  font-weight: $fontWeigthStrong;
 }
 
 .heroText {
-    color: $titleTextColor;
-    font-size: $fontSize18;
-    max-width: 600px;
-    margin-bottom: 150px;
+  color: $titleTextColor;
+  font-size: $fontSize18;
+  max-width: 600px;
+  margin-bottom: 150px;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    max-width: 90%;
+  }
 }

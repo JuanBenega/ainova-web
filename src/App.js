@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HeroBackgroundSVG from "./components/HeroBackgroundSVG";
 
 //importación de componentes
 import Header from "./components/Header";
@@ -22,6 +23,8 @@ function App() {
 
   return (
     <div className="app">
+      <HeroBackgroundSVG />
+
       <Header />
       <Hero />
       <Us />
@@ -29,6 +32,18 @@ function App() {
       <Services />
       <Portfolio />
     </div>
+
+    // <BrowserRouter>
+    // <div className="app">
+    //   <Header />
+    //   <Routes>
+    //     <Route path='/' element= {<Hero />} />
+    //     <Route path='/us' element= {<Us />} />
+    //     <Route path='/values' element= {<Values />} />
+    //     <Route path='/services' element= {<Services />} />
+    //   </Routes>
+    // </div>
+    // </BrowserRouter>
   );
 }
 

@@ -1,7 +1,6 @@
 import SectionTitle from "./SectionTitle";
 import React, { useEffect, useRef, useState } from "react";
 
-
 import valuesBack from "../assets/valuesBackground.png";
 import avatarInt from "../assets/avatarIntegridad.png";
 import avatarExc from "../assets/avatarExcelencia.png";
@@ -37,7 +36,6 @@ const Values = () => {
     };
   }, []);
 
-  
   return (
     <section className="section">
       <div className="valuesContainer">
@@ -48,7 +46,6 @@ const Values = () => {
         />
         <div ref={sectionRef} className="valuesPopup">
           <img
-            //className={`valuesBack ${isVisible ? "animate" : ""}`}
             className="valuesBack"
             src={valuesBack}
             alt="Imagen de un celular"
@@ -70,8 +67,8 @@ const Values = () => {
               Excelencia
               <br />
               <small>
-                Nos basamos en la honestidad y la transparencia para una
-                sostenibilidad a largo plazo
+                Cultura de mejora continua para superar todo tipo de
+                expectativas con un impacto significativo
               </small>
             </div>
           </div>
@@ -81,19 +78,19 @@ const Values = () => {
               Inonvación
               <br />
               <small>
-                Nos basamos en la honestidad y la transparencia para una
-                sostenibilidad a largo plazo
+                Creación de nuevas soluciones que responden a las cambiantes
+                necesidades del mercado
               </small>
             </div>
           </div>
           <div className={`balloon balloon-4 ${isVisible ? "animate" : ""}`}>
             <img src={avatarLid} alt="Imagen de liderazgo" />
-            Liderazgo
             <div className="ballonText">
+              Liderazgo
               <br />
               <small>
-                Nos basamos en la honestidad y la transparencia para una
-                sostenibilidad a largo plazo
+                Inspirar a las personas a trascender sus límites y a crear un
+                futuro mejor
               </small>
             </div>
           </div>
@@ -103,8 +100,8 @@ const Values = () => {
               Colaboración
               <br />
               <small>
-                Nos basamos en la honestidad y la transparencia para una
-                sostenibilidad a largo plazo
+                Fomentamos un entorno donde la diversidad de ideas y habilidades
+                se unen para resolver desafíos
               </small>
             </div>
           </div>
@@ -114,8 +111,8 @@ const Values = () => {
               Empatía
               <br />
               <small>
-                Nos basamos en la honestidad y la transparencia para una
-                sostenibilidad a largo plazo
+                Al comprender y compartir los sentimientos de los demás, creamos
+                relaciones más profundas
               </small>
             </div>
           </div>
@@ -125,8 +122,8 @@ const Values = () => {
               Actitud positiva
               <br />
               <small>
-                Nos basamos en la honestidad y la transparencia para una
-                sostenibilidad a largo plazo
+                Nos permite enfrentar los desafíos con optimismo y encontrar
+                soluciones creativas
               </small>
             </div>
           </div>
@@ -136,8 +133,7 @@ const Values = () => {
               Resiliencia
               <br />
               <small>
-                Nos basamos en la honestidad y la transparencia para una
-                sostenibilidad a largo plazo
+                Adaptarnos, aprender y crecer a partir de cualquier experiencia
               </small>
             </div>
           </div>

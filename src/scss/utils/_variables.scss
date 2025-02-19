@@ -9,6 +9,11 @@ $textUsCard: #535862;
 $backValues: #F5F5F5;
 $bakWordsCarousel: #FFF;
 
+$colorBack1: #0048FF;
+$colorBack2: #00DDFF;
+$colorBack3: #8800FF;
+$colorBack4: #FF8400;
+
 //Tipografía del proyecto
 //$fontStack: 'Roboto', sans-serif;
 $fontStack: 'Inter', sans-serif;
@@ -23,6 +28,7 @@ $fontSize23: 1.44rem;
 $fontSize48: 3rem;
 $fontSize20: 1.25rem;
 $fontSize32: 2rem;
+$fontSize26: 1.6rem;
 
 //Espesores de fuentes
 $fontWeigthNormal: 400;
@@ -39,3 +45,10 @@ $px32: 2rem;
 $px12: 0.75rem;
 $px670: 41.9rem;
 $px320: 20rem;
+
+//Definición de breakpoints
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+  desktop: 1024px,
+);
