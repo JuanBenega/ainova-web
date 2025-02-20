@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1264px;
+  width: 1264px;
   max-height: 789px;
   margin: 0 auto;
   gap: 104px;
@@ -22,6 +22,8 @@
     flex-direction: column;
     gap: 24px;
     text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
 
     label {
       font-size: $fontSizeSmall;
@@ -50,21 +52,19 @@
 
     .servicesOptions {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); // Dos columnas
+      grid-template-columns: 1fr 1fr; // Dos columnas
       grid-template-rows: repeat(3, auto); // Tres filas
       gap: 12px; // Espaciado entre elementos
       width: 100%;
       max-width: 512px;
+      justify-items: start;
+      //align-items: start;
     }
 
     .checkboxLabel {
       display: flex;
-      align-items: center;
-      width: 150px;
       gap: 5px;
       white-space: nowrap; // Evita que el texto pase a la siguiente línea
-      //width: 100%; // Asegura que ocupe todo el espacio disponible
-      text-align: left; // Alinea el texto a la izquierda
       font-size: $fontSizeNormal;
     }
 
