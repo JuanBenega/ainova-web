@@ -1,0 +1,98 @@
+.contactFormContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1264px;
+  max-height: 789px;
+  margin: 0 auto;
+  gap: 104px;
+
+  .contactFormImage {
+    width: 45%;
+    height: auto;
+    img {
+      width: 100%;
+      //border-radius: 10px;
+    }
+  }
+
+  .contactForm {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: left;
+
+    label {
+      font-size: $fontSizeSmall;
+      font-weight: $fontWeigthNormal;
+      color: $titleColor;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+      &:focus {
+        border-color: #6a11cb;
+        outline: none;
+      }
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    .servicesOptions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); // Dos columnas
+      grid-template-rows: repeat(3, auto); // Tres filas
+      gap: 12px; // Espaciado entre elementos
+      width: 100%;
+      max-width: 512px;
+    }
+
+    .checkboxLabel {
+      display: flex;
+      align-items: center;
+      width: 150px;
+      gap: 5px;
+      white-space: nowrap; // Evita que el texto pase a la siguiente línea
+      //width: 100%; // Asegura que ocupe todo el espacio disponible
+      text-align: left; // Alinea el texto a la izquierda
+      font-size: $fontSizeNormal;
+    }
+
+    button {
+      background-color: #6a11cb;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 100px;
+      font-size: 16px;
+      cursor: pointer;
+      &:hover {
+        background-color: #4e0e9e;
+      }
+    }
+  }
+}
+
+// Responsive para dispositivos móviles
+@media (max-width: 768px) {
+  .contactFormContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contactFormImage {
+    width: 100%;
+  }
+  .contactForm {
+    width: 100%;
+  }
+}
