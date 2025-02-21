@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import SectionTitle from "./SectionTitle";
+import emailjs from "emailjs-com";
 
-import contactImage from '../assets/contactImage.png';
+import contactImage from "../assets/contactImage.png";
 import Button from "./Button";
 
 const Contact = () => {
@@ -43,10 +44,35 @@ const Contact = () => {
     // Aquí integraríamos una API para manejar el envío del formulario
   };
 
-  const handleClick = () => {
-    alert("Botón presionado!");
+  const formRef = useRef();
+  const [status, setStatus] = useState("");
+  const [modalMessage, setModalMessage] = useState(""); // "" (vacío), "success", "error"
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ainova", // Reemplaza con tu Service ID de EmailJS
+        "template_ainova", // Reemplaza con tu Template ID
+        formRef.current,
+        "NmWDZyevDrFHicMLL" // Reemplaza con tu User ID (public key)
+      )
+      .then((result) => {
+        console.log("Mensaje enviado:", result.text);
+        setModalMessage("success");
+        setStatus("Mensaje enviado con éxito!");
+      })
+      .catch((error) => {
+        console.error("Error al enviar:", error.text);
+        setModalMessage("error");
+        setStatus("Error al enviar el mensaje. Inténtalo de nuevo.");
+      });
   };
 
+  const closeModal = () => {
+    setModalMessage("");
+  };
 
   return (
     <div id="contact" className="section container">
@@ -59,7 +85,7 @@ const Contact = () => {
         <div className="contactFormImage">
           <img src={contactImage} alt="Formulario de contacto" />
         </div>
-        <form className="contactForm" onSubmit={handleSubmit}>
+        <form className="contactForm" onSubmit={sendEmail} ref={formRef}>
           <label>Nombre</label>
           <input
             type="text"
@@ -112,9 +138,32 @@ const Contact = () => {
               </label>
             ))}
           </div>
-        
-         <button type="submit">Empecemos</button>
+
+          <button type="submit">Empecemos</button>
         </form>
+
+        {/* Modal condicional */}
+        {modalMessage === "success" && (
+          <div className="modalOverlay">
+            <div className="modalContent">
+              <h3>¡Gracias por tu contacto!</h3>
+              <p>
+                Tu mensaje se envió con éxito. Te responderemos a la brevedad.
+              </p>
+              <button onClick={closeModal}>Cerrar</button>
+            </div>
+          </div>
+        )}
+
+        {modalMessage === "error" && (
+          <div className="modalOverlay">
+            <div className="modalContent">
+              <h3>Hubo un problema</h3>
+              <p>No pudimos enviar tu mensaje. Inténtalo de nuevo más tarde.</p>
+              <button onClick={closeModal}>Cerrar</button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
