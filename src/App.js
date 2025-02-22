@@ -11,8 +11,8 @@ import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import Ecosystem from "./components/Ecosystem";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-import Button from "./components/Button";
 
 //importación de estilos
 import "./scss/main.scss";
@@ -35,6 +35,7 @@ function App() {
       <Portfolio />
       <Ecosystem />
       <Contact />
+      <Footer />
     </div>
 
     // <BrowserRouter>
