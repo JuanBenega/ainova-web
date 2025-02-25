@@ -17,8 +17,7 @@
     font-weight: $fontWeigth600;
 
     @media (max-width: map-get($breakpoints, mobile)) {
-      font-size: $fontSize18;
-      font-weight: $fontWeigth600;
+      font-size: 1.25rem;
     }
   }
   
@@ -28,7 +27,7 @@
     color: $titleTextColor;
 
     @media (max-width: map-get($breakpoints, mobile)) {
-      font-size: $fontSize18;
-      font-weight: $fontWeigth600;
+      font-size: 1rem;
+      font-weight: normal;
     }
   }
