@@ -7,17 +7,15 @@
     display: flex;
     align-items: center;
     //justify-content: space-between; // Logo - Íconos - Derechos
-    //max-width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 
     // Sección Izquierda (Logo + Tagline)
     .footerLeft {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start; // Alinea texto a la izquierda
-        width: 50%;
+      @extend %flexColumStart; // Alinea texto a la izquierda
+      width: 35%;
       .footerLogo {
-        width: 30%; // Ajusta el tamaño del logo
+        width: 55%; // Ajusta el tamaño del logo
         //margin-bottom: 0.5rem;
       }
 
@@ -29,8 +27,8 @@
     }
 
     .footerCenter {
-        @extend %flexColumCenter;
-        gap: 1.5rem;
+      @extend %flexColumCenter;
+      gap: 1.5rem;
       // Sección Central (Redes Sociales)
       .footerSocials {
         display: flex;
