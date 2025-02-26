@@ -6,7 +6,6 @@
   .footerContent {
     display: flex;
     align-items: center;
-    //justify-content: space-between; // Logo - Íconos - Derechos
     max-width: 1200px;
     margin: 0 auto;
 
@@ -14,9 +13,9 @@
     .footerLeft {
       @extend %flexColumStart; // Alinea texto a la izquierda
       width: 35%;
+
       .footerLogo {
         width: 55%; // Ajusta el tamaño del logo
-        //margin-bottom: 0.5rem;
       }
 
       .footerTagline {
@@ -62,26 +61,30 @@
 }
 
 // Ajustes Responsive
-@media (max-width: 768px) {
-  .footerContent {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-  }
+@media (max-width: map-get($breakpoints, mobile)) {
+  .footer {
+    padding: 1rem 0;
 
-  .footerLeft,
-  .footerSocials,
-  .footerRights {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    .footerContent {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
 
-  .footerLeft {
-    .footerLogo {
-      margin-bottom: 0.5rem;
+      .footerLeft,
+      .footerSocials,
+      .footerRights {
+        width: 80%;
+        display: flex;
+        align-items: center;
+      }
+
+      .footerLeft {
+        .footerLogo {
+          width: 80%;
+          margin-bottom: 0.5rem;
+        }
+      }
     }
   }
 }

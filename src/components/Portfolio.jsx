@@ -21,18 +21,42 @@ const Portfolio = () => {
       effect="coverflow"
       grabCursor={true}
       centeredSlides={true}
-      slidesPerView={2} // Ajustamos para que se vean los laterales
+      //slidesPerView={2} // Ajustamos para que se vean los laterales
       loop={true}
-      coverflowEffect={{
-        rotate: 25, // Menos inclinación
-        stretch: 10, // Separación de los slides
-        depth: 500, // Más profundidad
-        modifier: 1,
-        slideShadows: false, // Quitamos sombras para mejor estética
-      }}
+      // coverflowEffect={{
+      //   rotate: 25, // Menos inclinación
+      //   stretch: 10, // Separación de los slides
+      //   depth: 500, // Más profundidad
+      //   modifier: 1,
+      //   slideShadows: false, // Quitamos sombras para mejor estética
+      // }}
       pagination={{ clickable: true }}
       modules={[EffectCoverflow, Pagination]}
       className="mySwiper"
+      breakpoints={{
+        // Para pantallas pequeñas (hasta 767px)
+        0: {
+          slidesPerView: 1,
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 80,
+            modifier: 1,
+            slideShadows: false,
+          },
+        },
+        // Para pantallas medianas o mayores (768px en adelante)
+        768: {
+          slidesPerView: 2,
+          coverflowEffect: {
+            rotate: 25,
+            stretch: 10,
+            depth: 500,
+            modifier: 1,
+            slideShadows: false,
+          },
+        },
+      }}
     >
       {[slide1, slide2, slide3, slide4, slide5].map((image, index) => (
         <SwiperSlide key={index}>

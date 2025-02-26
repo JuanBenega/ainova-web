@@ -4,6 +4,11 @@
   height: 400px; // Ajustamos altura
   margin: 0 auto;
   padding-bottom: 50px;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    width: 90%;
+    height: 200px;
+  }
 }
 
 .mySwiper img {
