@@ -1,6 +1,10 @@
 .titleSection {
     @extend %flexColumCenter;
     max-width: 1204px;
+
+    @media (max-width: map-get($breakpoints, mobile)) {
+      width: 90%;
+    }
   }
 
   .badge {
@@ -29,5 +33,6 @@
     @media (max-width: map-get($breakpoints, mobile)) {
       font-size: 1rem;
       font-weight: normal;
+      width: 90%;
     }
   }

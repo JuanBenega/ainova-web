@@ -13,37 +13,30 @@ const Header = () => {
 
   return (
     <header className="header">
-      <nav className="headerNav">
-        <li className="headerMenu">
-          <p className="headerLink">Nosotros</p>
-          <p className="headerLink">Servicios</p>
-          <p className="headerLink">Portfolio</p>
-        </li> 
+      {/* Capa Violeta: se desplaza con el scroll */}
+      <div className="headerViolet"></div>
 
-        {/* <li className="headerMenu">
-          <Link to={'/us'} className="headerLink">Nosotros</Link>
-          <Link to={'/services'} className="headerLink">Servicios</Link>
-          <Link to={'/portfolio'} className="headerLink">Portfolio</Link>
-        </li> */}
+      {/* Capa Gris Semitransparente: se queda fija al hacer scroll */}
+      <div className="headerNavContainer">
+        <nav className="headerNav">
+          <ul className="headerMenu">
+            <li>Nosotros</li>
+            <li>Servicios</li>
+            <li>Portfolio</li>
+          </ul>
 
-        <div className="headerLogo">
-          <img className="headerLogoIcon" src={logo} alt="AINOVA Logo" />
-          <img className="headerLogoText" src={logoText} alt="AINOVA Logo" />
-        </div>
 
-        <div className="headerMenu">
-          <p className="headerLink">Contacto</p>
-          <Button
-            text="INICIO"
-            onClick={handleClick}
-            size="18px"
-            Weight="500"
-            width="183px"
-            height="39px"
-            radius="16px"
-          />
-        </div>
-      </nav>
+          <div className="headerLogo">
+            <img className="headerLogoIcon" src={logo} alt="AINOVA Logo" />
+            <img className="headerLogoText" src={logoText} alt="AINOVA Logo" />
+          </div>
+
+          <div className="headerMenu">
+            <li className="headerLink">Contacto</li>
+            <button>INICIO</button>
+          </div>
+        </nav>
+      </div>
     </header>
   );
 };

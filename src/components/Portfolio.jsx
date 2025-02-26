@@ -21,15 +21,7 @@ const Portfolio = () => {
       effect="coverflow"
       grabCursor={true}
       centeredSlides={true}
-      //slidesPerView={2} // Ajustamos para que se vean los laterales
       loop={true}
-      // coverflowEffect={{
-      //   rotate: 25, // Menos inclinación
-      //   stretch: 10, // Separación de los slides
-      //   depth: 500, // Más profundidad
-      //   modifier: 1,
-      //   slideShadows: false, // Quitamos sombras para mejor estética
-      // }}
       pagination={{ clickable: true }}
       modules={[EffectCoverflow, Pagination]}
       className="mySwiper"
