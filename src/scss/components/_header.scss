@@ -1,100 +1,133 @@
-@import "../utils/extends";
-@import "../utils/variables";
-
 .header {
-  //position: relative; /* Asegura que z-index sea aplicable */
-
   font-family: $fontStack;
   color: $ligthColor;
   font-size: $fontSizeNormal;
+  width: 100%;
+  max-width: 1440;
+  height: 89px;
+  background-image: url("../../assets/headerBackground.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 
-  //display: flex;
-  
-
-  .headerViolet {
-    position: relative;
-    width: 100%;
-    //max-width: 1440;
-    height: 89px;
-    z-index: 1;
-
-    background-image: url("../../assets/headerBackground.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    // Esta capa NO es sticky, así que se mueve con el scroll
-  }
-
-  .headerNavContainer {
-    position: sticky;
-    top: 0; // Se queda en la parte superior
+  .headerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 1.5rem; // Se queda en la parte superior
+    left: 11rem;
     z-index: 999; // Asegúrate de que quede encima de la capa violeta
 
-    .headerNav {
+    width: 80%;
+    max-width: 1295px;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 60px; // Ajusta la altura
+    border-radius: 30px;
+
+    background: rgba(0, 0, 0, 0.25); // Gris semitransparente
+    backdrop-filter: blur(10px);
+
+    .headerMenu {
+      // @extend %flexBetween;
+      // width: 320px;
       display: flex;
+      gap: 1.5rem;
       align-items: center;
-      justify-content: space-between;
-      //width: 80%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-      height: 60px; // Ajusta la altura
-      border-radius: 30px;
 
-      background: rgba(0, 0, 0, 0.25); // Gris semitransparente
-      backdrop-filter: blur(10px);
-
-      .headerMenu {
-        // @extend %flexBetween;
-        // width: 320px;
-        display: flex;
-        gap: 1.5rem;
-        align-items: center;
-
-        li {
-          list-style: none;
-          color: #fff;
-          cursor: pointer;
-
-          &:hover {
-            transform: scale(1.1);
-            transition: 400ms;
-          }
-        }
-
-        button {
-          /* Botón “INICIO” */
-          background-color: #6a11cb;
-          border: none;
-          border-radius: 16px;
-          padding: 0.5rem 1.5rem;
-          color: #fff;
-          font-size: 1rem;
-          cursor: pointer;
-
-          &:hover {
-            background-color: #4e0e9e;
-          }
-        }
-      }
-      .headerLogo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 176px;
-        height: auto;
+      li {
+        list-style: none;
+        color: #fff;
+        cursor: pointer;
 
         &:hover {
-          scale: 110%;
+          transform: scale(1.1);
           transition: 400ms;
         }
-        .headerLogoIcon {
-          margin-top: 40px;
-          width: 103px;
-          height: 101px;
-          justify-self: center;
+      }
+
+      button {
+        /* Botón “INICIO” */
+        border-radius: 16px;
+        padding: 0.5rem 1.5rem;
+        color: #fff;
+        font-size: 1rem;
+        width: 11rem;
+        height: 2rem;
+        cursor: pointer;
+
+        border: 1px solid var(--linear, #a79fff);
+        background: var(
+          --color-time,
+          linear-gradient(180deg, #7e73ff 0%, #6941c6 100%)
+        );
+
+        &:hover {
+          background-color: $secondaryColor;
         }
+
+        .hamburgerLines {
+          display: none;
+          position: relative;
+          width: 20px; /* Ancho de la línea principal */
+          height: 2px; /* Grosor de la línea principal */
+          background: #fff; /* Color de la línea principal */
+
+          /* Líneas superior e inferior */
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            width: 20px; /* Mismo ancho */
+            height: 2px; /* Mismo grosor */
+            background: #fff;
+            left: 0; /* Alineadas a la izquierda */
+            transition: all 0.3s ease; /* Transición suave */
+          }
+
+          /* Línea superior */
+          &::before {
+            top: -6px; /* Separación vertical arriba */
+          }
+
+          /* Línea inferior */
+          &::after {
+            top: 6px; /* Separación vertical abajo */
+          }
+
+          @media (max-width: map-get($breakpoints, mobile)) {
+            display: contents;
+          }
+        }
+
+        @media (max-width: map-get($breakpoints, mobile)) {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+        }
+      }
+
+      @media (max-width: map-get($breakpoints, mobile)) {
+        display: none;
+      }
+    }
+    .headerLogo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 176px;
+      height: auto;
+
+      &:hover {
+        scale: 110%;
+        transition: 400ms;
+      }
+      .headerLogoIcon {
+        margin-top: 40px;
+        width: 103px;
+        height: 101px;
+        justify-self: center;
       }
     }
   }
