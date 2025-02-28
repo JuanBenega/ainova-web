@@ -66,52 +66,72 @@
         &:hover {
           background-color: $secondaryColor;
         }
-
-        .hamburgerLines {
-          display: none;
-          position: relative;
-          width: 20px; /* Ancho de la línea principal */
-          height: 2px; /* Grosor de la línea principal */
-          background: #fff; /* Color de la línea principal */
-
-          /* Líneas superior e inferior */
-          &::before,
-          &::after {
-            content: "";
-            position: absolute;
-            width: 20px; /* Mismo ancho */
-            height: 2px; /* Mismo grosor */
-            background: #fff;
-            left: 0; /* Alineadas a la izquierda */
-            transition: all 0.3s ease; /* Transición suave */
-          }
-
-          /* Línea superior */
-          &::before {
-            top: -6px; /* Separación vertical arriba */
-          }
-
-          /* Línea inferior */
-          &::after {
-            top: 6px; /* Separación vertical abajo */
-          }
-
-          @media (max-width: map-get($breakpoints, mobile)) {
-            display: contents;
-          }
-        }
-
-        @media (max-width: map-get($breakpoints, mobile)) {
-          width: 48px;
-          height: 48px;
-          border-radius: 50%;
-        }
       }
 
       @media (max-width: map-get($breakpoints, mobile)) {
         display: none;
       }
     }
+
+    .menuButton {
+      display: none;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1000;
+      background: none;
+      border: none;
+      cursor: pointer;
+      /* Ajusta tamaño según tu diseño */
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #9b59b6, #8e44ad);
+
+      
+      align-items: center;
+      justify-content: center;
+
+      /* Efecto hover */
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+      .hamburgerLines {
+        position: relative;
+        width: 20px; /* Ancho de la línea principal */
+        height: 2px; /* Grosor de la línea principal */
+        background: #fff; /* Color de la línea principal */
+
+        /* Líneas superior e inferior */
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          width: 20px; /* Mismo ancho */
+          height: 2px; /* Mismo grosor */
+          background: #fff;
+          left: 0; /* Alineadas a la izquierda */
+          transition: all 0.3s ease; /* Transición suave */
+        }
+
+        /* Línea superior */
+        &::before {
+          top: -6px; /* Separación vertical arriba */
+        }
+
+        /* Línea inferior */
+        &::after {
+          top: 6px; /* Separación vertical abajo */
+        }
+
+        
+      }
+      @media (max-width: map-get($breakpoints, mobile)) {
+        display: flex;
+      }
+    }
+
     .headerLogo {
       display: flex;
       flex-direction: column;
@@ -128,7 +148,34 @@
         width: 103px;
         height: 101px;
         justify-self: center;
+
+        @media (max-width: map-get($breakpoints, mobile)) {
+          width: 76px;
+          height: auto;
+        }
+      }
+      .headerLogoText {
+        @media (max-width: map-get($breakpoints, mobile)) {
+          width: 94px;
+          height: auto;
+        }
+      }
+      @media (max-width: map-get($breakpoints, mobile)) {
+        gap: 1rem;
       }
     }
+
+    @media (max-width: map-get($breakpoints, mobile)) {
+      height: 40px;
+      width: 70vw;
+      top: 1.4rem;
+      left: 1.7rem;
+      justify-content: center;
+    }
+  }
+  @media (max-width: map-get($breakpoints, mobile)) {
+    background-image: url("../../assets/headerBackgroundMobile.svg");
+
+    height: 66px;
   }
 }

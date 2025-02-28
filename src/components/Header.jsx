@@ -20,11 +20,11 @@ const Header = () => {
 
         <div className="headerMenu">
           <li className="headerLink">Contacto</li>
-          <button>
-            INICIO
-            <div className="hamburgerLines"></div>
-          </button>
+          <button>INICIO</button>
         </div>
+        <div className="menuButton">
+            <div className="hamburgerLines"></div>
+          </div>
       </nav>
     </header>
   );
