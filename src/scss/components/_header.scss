@@ -47,7 +47,7 @@
         }
       }
 
-      button {
+      .headerButton {
         /* Botón “INICIO” */
         border-radius: 16px;
         padding: 0.5rem 1.5rem;
@@ -76,57 +76,23 @@
     .menuButton {
       display: none;
       position: fixed;
-      top: 1rem;
       right: 1rem;
       z-index: 1000;
-      background: none;
-      border: none;
-      cursor: pointer;
-      /* Ajusta tamaño según tu diseño */
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #9b59b6, #8e44ad);
-
-      
-      align-items: center;
-      justify-content: center;
 
       /* Efecto hover */
       transition: transform 0.3s ease;
       &:hover {
         transform: scale(1.05);
       }
-      .hamburgerLines {
-        position: relative;
-        width: 20px; /* Ancho de la línea principal */
-        height: 2px; /* Grosor de la línea principal */
-        background: #fff; /* Color de la línea principal */
 
-        /* Líneas superior e inferior */
-        &::before,
-        &::after {
-          content: "";
-          position: absolute;
-          width: 20px; /* Mismo ancho */
-          height: 2px; /* Mismo grosor */
-          background: #fff;
-          left: 0; /* Alineadas a la izquierda */
-          transition: all 0.3s ease; /* Transición suave */
-        }
-
-        /* Línea superior */
-        &::before {
-          top: -6px; /* Separación vertical arriba */
-        }
-
-        /* Línea inferior */
-        &::after {
-          top: 6px; /* Separación vertical abajo */
-        }
-
-        
+      .hamburgerButton {
+        // background-image: url("../../assets/modibleNavButton.png");
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: contain;
+        //background-color: transparent;
       }
+
       @media (max-width: map-get($breakpoints, mobile)) {
         display: flex;
       }
@@ -168,11 +134,12 @@
     @media (max-width: map-get($breakpoints, mobile)) {
       height: 40px;
       width: 70vw;
-      top: 1.4rem;
+      //top: 1.4rem;
       left: 1.7rem;
       justify-content: center;
     }
   }
+
   @media (max-width: map-get($breakpoints, mobile)) {
     background-image: url("../../assets/headerBackgroundMobile.svg");
 

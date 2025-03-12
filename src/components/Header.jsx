@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import logo from "../assets/ainovaLogo.png";
 import logoText from "../assets/ainovaLogoText.png";
+import hamburgerIcon from "../assets/modibleNavButton.png"
 
 const Header = () => {
   return (
@@ -20,10 +21,10 @@ const Header = () => {
 
         <div className="headerMenu">
           <li className="headerLink">Contacto</li>
-          <button>INICIO</button>
+          <button className="headerButton">INICIO</button>
         </div>
         <div className="menuButton">
-            <div className="hamburgerLines"></div>
+            <img src={hamburgerIcon} alt="Menú hamburgesa" />
           </div>
       </nav>
     </header>
