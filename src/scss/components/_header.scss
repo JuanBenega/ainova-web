@@ -85,14 +85,6 @@
         transform: scale(1.05);
       }
 
-      .hamburgerButton {
-        // background-image: url("../../assets/modibleNavButton.png");
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: contain;
-        //background-color: transparent;
-      }
-
       @media (max-width: map-get($breakpoints, mobile)) {
         display: flex;
       }
@@ -126,15 +118,99 @@
           height: auto;
         }
       }
+
       @media (max-width: map-get($breakpoints, mobile)) {
         gap: 1rem;
       }
     }
 
+    .mobileMenu {
+      position: fixed;
+      top: 0;
+      right: -200%;
+      font-family: $fontStack;
+      font-size: $fontSizeSmall;
+      width: 70vw;
+      height: 80vh;
+      background: linear-gradient(180deg, #6b11cb81, #2E2E48);
+      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+      transition: right 0.4s ease-in-out;
+      z-index: 1002;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 50px 20px;
+    
+      &.open {
+        right: 0;
+      }
+    }
+    
+    .menuContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .menuLogo {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+    
+    .menuLinks {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    
+      li {
+        margin: 15px 0;
+    
+        a {
+          text-decoration: none;
+          //font-size: 1.4rem;
+          //font-weight: 500;
+          color: white;
+          transition: 0.3s;
+    
+          &:hover {
+            color: #ddd;
+          }
+        }
+      }
+    }
+    
+    .menuSocials {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+    
+      .socialIcon {
+        font-size: 1.8rem;
+        color: white;
+        transition: 0.3s;
+    
+        &:hover {
+          color: #ddd;
+        }
+      }
+    }
+    
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1000;
+    }
+
     @media (max-width: map-get($breakpoints, mobile)) {
       height: 40px;
       width: 70vw;
-      //top: 1.4rem;
+      top: 1.4rem;
       left: 1.7rem;
       justify-content: center;
     }
