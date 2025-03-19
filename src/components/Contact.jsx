@@ -75,7 +75,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="section container">
+    <div id="contacto" className="section container">
       <SectionTitle
         badge="Contacto"
         title="Hagamos crecer tu marca, juntos"

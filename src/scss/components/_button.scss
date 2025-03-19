@@ -16,4 +16,8 @@
   &:hover {
     background-color: $secondaryColor;
   }
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    width: 40%;
+  }
 }

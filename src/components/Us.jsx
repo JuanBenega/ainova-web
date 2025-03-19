@@ -44,7 +44,7 @@ const Us = () => {
   ];
 
   return (
-    <div className="section">
+    <div className="section" id="nosotros">
       <div className="container">
         <SectionTitle
           badge="Nosotros"

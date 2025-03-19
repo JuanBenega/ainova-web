@@ -10,12 +10,12 @@ const Footer = () => {
     <footer className="footer">
       <div className="footerContent">
         {/* Sección izquierda: Logo y texto */}
-        <div className="footerLeft">
+        <a className="footerLeft" href="#inicio">
           <img src={logo} alt="AINova Logo" className="footerLogo" />
           <p className="footerTagline">
             Innovación y crecimiento para tu empresa.
           </p>
-        </div>
+        </a>
 
         {/* Sección central: Redes sociales */}
         <div className="footerCenter">

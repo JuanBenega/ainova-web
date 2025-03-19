@@ -58,7 +58,7 @@ const Services = () => {
       ];
   
     return (
-    <div id="services" className="section container">
+    <div id="servicios" className="section container">
       <SectionTitle
         badge="Servicios"
         title="Transforma tu negocio con más tecnología"

@@ -1,8 +1,16 @@
 .ecoIcons {
-    width: 100%;
-    height: 4.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 38px;
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 38px;
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    flex-wrap: wrap;
+    height: auto;
+    width: 55%;
+    margin-bottom: auto;
+    gap: 1.5rem;
+  }
 }
