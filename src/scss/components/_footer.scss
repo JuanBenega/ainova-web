@@ -32,14 +32,14 @@
       .footerSocials {
         display: flex;
         gap: 1.5rem; // Espacio entre íconos
-
+        align-items: center;
         a {
           display: flex;
           align-items: center;
 
           img {
             width: 3rem; // Tamaño de cada ícono
-            height: auto;
+            height: 3rem;
             transition: transform 0.3s ease;
 
             &:hover {

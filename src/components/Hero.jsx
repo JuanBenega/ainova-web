@@ -7,7 +7,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="heroSection">
+    <div className="heroSection" id="inicio">
       <div className="heroContainer">
         <p className="heroTitle">
           Innovación y crecimiento <span className="titleRemark">PARA TU EMPRESA</span>

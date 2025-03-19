@@ -35,9 +35,10 @@
       display: flex;
       gap: 1.5rem;
       align-items: center;
+      list-style: none;
 
-      li {
-        list-style: none;
+      a {
+        text-decoration: none;
         color: #fff;
         cursor: pointer;
 
