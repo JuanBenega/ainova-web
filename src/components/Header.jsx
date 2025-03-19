@@ -4,9 +4,9 @@ import { useState } from "react";
 import logo from "../assets/ainovaLogo.png";
 import logoText from "../assets/ainovaLogoText.png";
 import hamburgerIcon from "../assets/modibleNavButton.png"
-import iconInstagram from "../assets/footerIconInstagram.png";
-import iconFacebook from "../assets/footerIconFacebook.png";
-import iconLinkedin from "../assets/footerIconLinkedin.png";
+import iconInstagram from "../assets/toggleIconInstagram.png";
+import iconFacebook from "../assets/toggleIconFacebook.png";
+import iconLinkedin from "../assets/toggleIconLinkedin.png";
 import logoToggle from "../assets/logoToggle.png";
 
 
