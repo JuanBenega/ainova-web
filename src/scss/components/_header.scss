@@ -37,7 +37,7 @@
       align-items: center;
       list-style: none;
 
-      a {
+      .headerOption {
         text-decoration: none;
         color: #fff;
         cursor: pointer;
@@ -50,19 +50,22 @@
 
       .headerButton {
         /* Botón “INICIO” */
+        font-family: $fontStack;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        text-align: center;
+        align-content:center;
         border-radius: 16px;
         padding: 0.5rem 1.5rem;
         color: #fff;
-        font-size: 1rem;
+        font-size: 1.1rem;
         width: 11rem;
-        height: 2rem;
+        height: 1.5rem;
         cursor: pointer;
 
         border: 1px solid var(--linear, #a79fff);
-        background: var(
-          --color-time,
-          linear-gradient(180deg, #7e73ff 0%, #6941c6 100%)
-        );
+        background: var(--color-time,
+            linear-gradient(180deg, #7e73ff 0%, #6941c6 100%));
 
         &:hover {
           background-color: $secondaryColor;
@@ -82,6 +85,7 @@
 
       /* Efecto hover */
       transition: transform 0.3s ease;
+
       &:hover {
         transform: scale(1.05);
       }
@@ -102,6 +106,7 @@
         scale: 110%;
         transition: 400ms;
       }
+
       .headerLogoIcon {
         margin-top: 40px;
         width: 103px;
@@ -113,6 +118,7 @@
           height: auto;
         }
       }
+
       .headerLogoText {
         @media (max-width: map-get($breakpoints, mobile)) {
           width: 94px;
@@ -142,12 +148,12 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 50px 20px;
-    
+
       &.open {
         right: -19%;
       }
     }
-    
+
     .menuContent {
       display: flex;
       flex-direction: column;
@@ -156,50 +162,50 @@
       width: 100%;
       height: 80vh;
     }
-    
+
     .menuLogo {
       width: 196px;
       margin-bottom: 20px;
     }
-    
+
     .menuLinks {
       list-style: none;
       padding: 0 0 200px 0;
       text-align: left;
       width: 70%;
-    
+
       li {
         margin: 25px 0;
-    
+
         a {
           text-decoration: none;
           color: white;
           transition: 0.3s;
-    
+
           &:hover {
             color: #ddd;
           }
         }
       }
     }
-    
+
     .menuSocials {
       display: flex;
       gap: 20px;
       margin-bottom: 30px;
       align-items: center;
-    
+
       .socialIcon {
         font-size: 1.8rem;
         color: white;
         transition: 0.3s;
-    
+
         &:hover {
           color: #ddd;
         }
       }
     }
-    
+
     .overlay {
       position: fixed;
       top: 0;

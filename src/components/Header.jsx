@@ -25,9 +25,9 @@ const Header = () => {
     <header className="header">
       <nav className="headerNav">
         <ul className="headerMenu">
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a className="headerOption" href="#nosotros">Nosotros</a></li>
+          <li><a className="headerOption" href="#servicios">Servicios</a></li>
+          <li><a className="headerOption" href="#portfolio">Portfolio</a></li>
         </ul>
 
         
@@ -38,8 +38,8 @@ const Header = () => {
         
 
         <div className="headerMenu">
-          <li className="headerLink"><a href="#contacto">Contacto</a></li>
-          <button className="headerButton">INICIO</button>
+          <li className="headerLink"><a className="headerOption" href="#contacto">Contacto</a></li>
+          <a className="headerButton" href="#inicio">INICIO</a>
         </div>
         <div className="menuButton">
           <img src={hamburgerIcon} alt="Menú hamburgesa" onClick={toggleMenu} />

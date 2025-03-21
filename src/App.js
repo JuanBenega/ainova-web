@@ -18,10 +18,7 @@ import Footer from "./components/Footer";
 import "./scss/main.scss";
 
 function App() {
-  //declaración de funciones
-  const handleClick = () => {
-    alert("Botón presionado!");
-  };
+
 
   return (
     <div className="app">
