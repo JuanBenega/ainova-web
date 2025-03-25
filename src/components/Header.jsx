@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import logo from "../assets/ainovaLogo.png";
 import logoText from "../assets/ainovaLogoText.png";
@@ -10,9 +10,6 @@ import iconLinkedin from "../assets/toggleIconLinkedin.png";
 import logoToggle from "../assets/logoToggle.png";
 
 
-
-
-
 const Header = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,6 +17,21 @@ const Header = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      setScrolled(offset > 50); // Puedes ajustar el valor según tu diseño
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header className="header">
@@ -30,12 +42,12 @@ const Header = () => {
           <li><a className="headerOption" href="#portfolio">Portfolio</a></li>
         </ul>
 
-        
-          <a className="headerLogo" href="#inicio">
-            <img className="headerLogoIcon" src={logo} alt="AINOVA Logo" />
-            <img className="headerLogoText" src={logoText} alt="AINOVA Logo" />
-          </a>
-        
+
+        <a className="headerLogo" href="#inicio">
+          <img className="headerLogoIcon" src={logo} alt="AINOVA Logo" />
+          <img className={`headerLogoText ${scrolled ? "hideLogoText" : ""}`} src={logoText} alt="AINOVA Logo" />
+        </a>
+
 
         <div className="headerMenu">
           <li className="headerLink"><a className="headerOption" href="#contacto">Contacto</a></li>

@@ -11,6 +11,7 @@
   .contactFormImage {
     width: 45%;
     height: auto;
+
     img {
       width: 100%;
       //border-radius: 10px;
@@ -40,6 +41,7 @@
       border-radius: 8px;
       font-size: 14px;
       font-family: inherit;
+
       &:focus {
         border-color: #6a11cb;
         outline: none;
@@ -69,7 +71,7 @@
     }
 
     button {
-      background-color: #6a11cb;
+      background-color: #7F56D9;
       color: white;
       padding: 12px;
       width: 100%;
@@ -77,9 +79,12 @@
       border-radius: 100px;
       font-size: 16px;
       cursor: pointer;
+
       &:hover {
         background-color: #4e0e9e;
       }
+
+
     }
   }
 
@@ -138,10 +143,15 @@
 
     .contactForm {
       width: 90%;
+
+      button {
+        border-radius: 8px;
+      }
     }
   }
+
   .contactFormImage {
     display: none;
   }
-  
+
 }

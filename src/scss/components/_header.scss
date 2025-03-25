@@ -3,7 +3,7 @@
   color: $ligthColor;
   font-size: $fontSizeNormal;
   width: 100%;
-  max-width: 1440;
+  max-width: 1420;
   height: 89px;
   background-image: url("../../assets/headerBackground.svg");
   background-repeat: no-repeat;
@@ -16,11 +16,11 @@
     justify-content: space-between;
     position: fixed;
     top: 1.5rem; // Se queda en la parte superior
-    left: 11rem;
+    left: 12rem;
     z-index: 999; // Asegúrate de que quede encima de la capa violeta
 
     width: 80%;
-    max-width: 1295px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 30px;
     height: 60px; // Ajusta la altura
@@ -120,6 +120,14 @@
       }
 
       .headerLogoText {
+        transition: opacity 0.4s ease, transform 0.4s ease;
+
+        &.hideLogoText {
+          opacity: 0;
+          transform: translateY(-10px);
+          pointer-events: none;
+        }
+
         @media (max-width: map-get($breakpoints, mobile)) {
           width: 94px;
           height: auto;

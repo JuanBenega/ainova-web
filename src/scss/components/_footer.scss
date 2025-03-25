@@ -12,7 +12,8 @@
     // Sección Izquierda (Logo + Tagline)
     .footerLeft {
       @extend %flexColumStart; // Alinea texto a la izquierda
-      width: 35%;
+      width: 40%;
+      text-decoration: none;
 
       .footerLogo {
         width: 55%; // Ajusta el tamaño del logo

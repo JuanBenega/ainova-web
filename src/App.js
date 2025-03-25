@@ -21,7 +21,7 @@ function App() {
 
 
   return (
-    <div className="app">
+    <div className="app" id="inicio">
       <HeroBackgroundSVG />
 
       <Header />
@@ -29,23 +29,11 @@ function App() {
       <Us />
       <Values />
       <Services />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Ecosystem />
       <Contact />
       <Footer />
     </div>
-
-    // <BrowserRouter>
-    // <div className="app">
-    //   <Header />
-    //   <Routes>
-    //     <Route path='/' element= {<Hero />} />
-    //     <Route path='/us' element= {<Us />} />
-    //     <Route path='/values' element= {<Values />} />
-    //     <Route path='/services' element= {<Services />} />
-    //   </Routes>
-    // </div>
-    // </BrowserRouter>
   );
 }
 

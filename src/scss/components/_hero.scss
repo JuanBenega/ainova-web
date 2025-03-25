@@ -43,3 +43,31 @@
     max-width: 90%;
   }
 }
+
+.heroButton {
+  text-decoration: none;
+  padding: 4px 12px;
+  color: white;
+  font-family: $fontStack;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.5rem;
+  width: 15rem;
+  height: 4rem;
+  font-weight: $fontWeigth700;
+  border-radius: 72px;        
+  align-content:center;
+
+
+  border: 1px solid var(--linear, #a79fff);
+  background: var(--color-time,
+      linear-gradient(180deg, #7e73ff 0%, #6941c6 100%));
+
+  &:hover {
+    background-color: $secondaryColor;
+  }
+
+  @media (max-width: map-get($breakpoints, mobile)) {
+    width: 60%;
+  }
+}
