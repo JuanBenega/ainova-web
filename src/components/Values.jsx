@@ -37,7 +37,7 @@ const Values = () => {
   }, []);
 
   return (
-    <section className="section">
+    <section className="section" id="valores">
       <div className="valuesContainer">
         <SectionTitle
           badge="Valores"

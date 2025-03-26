@@ -38,9 +38,9 @@ const Header = () => {
       <nav className="headerNav">
         <ul className="headerMenu">
           <li><a className="headerOption" href="#nosotros">Nosotros</a></li>
+          <li><a className="headerOption" href="#valores">Valores</a></li>
           <li><a className="headerOption" href="#servicios">Servicios</a></li>
-          <li><a className="headerOption" href="#portfolio">Portfolio</a></li>
-        </ul>
+                  </ul>
 
 
         <a className="headerLogo" href="#inicio">
@@ -50,7 +50,7 @@ const Header = () => {
 
 
         <div className="headerMenu">
-          <li className="headerLink"><a className="headerOption" href="#contacto">Contacto</a></li>
+          <a className="headerOption" href="#contacto">Contacto</a>
           <a className="headerButton" href="#inicio">INICIO</a>
         </div>
         <div className="menuButton">

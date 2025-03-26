@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  background-size: max(1420);
 
   .headerNav {
     display: flex;
@@ -30,8 +31,7 @@
     backdrop-filter: blur(10px);
 
     .headerMenu {
-      // @extend %flexBetween;
-      // width: 320px;
+      //width: 320px;
       display: flex;
       gap: 1.5rem;
       align-items: center;
