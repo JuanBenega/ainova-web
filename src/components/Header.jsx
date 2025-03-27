@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import logo from "../assets/ainovaLogo.png";
@@ -35,7 +34,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <nav className="headerNav">
+      <nav className={`headerNav ${scrolled ? "headerScrolled" : ""}`}>
         <ul className="headerMenu">
           <li><a className="headerOption" href="#nosotros">Nosotros</a></li>
           <li><a className="headerOption" href="#valores">Valores</a></li>
