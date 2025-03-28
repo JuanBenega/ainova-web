@@ -17,7 +17,8 @@
     justify-content: space-between;
     position: fixed;
     top: 1.5rem; // Se queda en la parte superior
-    left: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 999; // Asegúrate de que quede encima de la capa violeta
 
     width: 80%;
@@ -227,8 +228,6 @@
     @media (max-width: map-get($breakpoints, mobile)) {
       height: 40px;
       width: 70vw;
-      top: 1.4rem;
-      left: 1.7rem;
       justify-content: center;
     }
   }
