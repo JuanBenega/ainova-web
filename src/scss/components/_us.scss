@@ -27,18 +27,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
-
-  @media (max-width: map-get($breakpoints, mobile)) {
-    width: 90%;
-  }
 }
 
 .usCards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: $px32;
-  padding: $px20 0 $px20 $px112;
-  //padding-left: $px112;
+  padding: $px20 0 $px20 0;
   max-width: 1216px;
 
   @media (max-width: map-get($breakpoints, mobile)) {

@@ -21,7 +21,7 @@ function App() {
 
 
   return (
-    <div className="app" id="inicio">
+    <div className="app">
       <HeroBackgroundSVG />
 
       <Header />

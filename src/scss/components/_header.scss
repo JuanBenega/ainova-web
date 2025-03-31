@@ -21,7 +21,7 @@
     transform: translateX(-50%);
     z-index: 999; // Asegúrate de que quede encima de la capa violeta
 
-    width: 80%;
+    width: 85%;
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 30px;
@@ -60,7 +60,7 @@
         padding: 0.5rem 1.5rem;
         color: #fff;
         font-size: 1.1rem;
-        width: 11rem;
+        width: 8.5rem;
         height: 1.5rem;
         cursor: pointer;
 
@@ -229,11 +229,12 @@
       height: 40px;
       width: 70vw;
       justify-content: center;
+      top: 2rem !important;
     }
   }
 
   .headerScrolled {
-    top: 0 !important;
+    top: 0;
     transition: top 0.3s ease;
   }
 

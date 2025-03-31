@@ -33,7 +33,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header">
+    <header className="header" id="inicio">
       <nav className={`headerNav ${scrolled ? "headerScrolled" : ""}`}>
         <ul className="headerMenu">
           <li><a className="headerOption" href="#nosotros">Nosotros</a></li>
