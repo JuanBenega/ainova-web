@@ -1,0 +1,55 @@
+.toggle-switch {
+    position: fixed;
+    top: 4.5rem;
+    right: 2rem; // Ajusta según tu header
+    z-index: 1003;
+
+    &-checkbox {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    &-label {
+        display: block;
+        width: 50px;
+        height: 26px;
+        background: #ccc;
+        border-radius: 50px;
+        position: relative;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    &-inner {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        background: linear-gradient(135deg, #fff, #f0f0f0);
+    }
+
+    &-switch {
+        display: block;
+        width: 22px;
+        height: 22px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Cuando el input está checked */
+    &-checkbox:checked+&-label {
+        background: #4cd137;
+        /* verde de “activo” */
+    }
+
+    &-checkbox:checked+&-label .toggle-switch-switch {
+        left: calc(100% - 2px);
+        transform: translateX(-100%);
+    }
+}

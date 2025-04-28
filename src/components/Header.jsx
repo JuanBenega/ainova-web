@@ -1,3 +1,4 @@
+import ToggleSwitch from "./ToggleSwitch";
 import { useState, useEffect } from "react";
 
 import logo from "../assets/ainovaLogo.png";
@@ -32,6 +33,12 @@ const Header = () => {
     };
   }, []);
 
+  const [darkMode, setDarkMode] = useState(false);
+  const handleToggle = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle("dark-mode", !darkMode);
+  };
+
   return (
     <header className="header" id="inicio">
       <nav className={`headerNav ${scrolled ? "headerScrolled" : ""}`}>
@@ -39,7 +46,7 @@ const Header = () => {
           <li><a className="headerOption" href="#nosotros">Nosotros</a></li>
           <li><a className="headerOption" href="#valores">Valores</a></li>
           <li><a className="headerOption" href="#servicios">Servicios</a></li>
-                  </ul>
+        </ul>
 
 
         <a className="headerLogo" href="#inicio">
@@ -97,7 +104,11 @@ const Header = () => {
 
         {/* Fondo oscurecido cuando el menú está abierto */}
         {menuOpen && <div className="overlay" onClick={toggleMenu}></div>}
+
+        {/* Switch para modo oscuro */}
+        <ToggleSwitch isOn={darkMode} handleToggle={handleToggle} />
       </nav>
+
     </header>
   );
 };
