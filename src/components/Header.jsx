@@ -1,5 +1,6 @@
 import ToggleSwitch from "./ToggleSwitch";
 import { useState, useEffect } from "react";
+import { useTheme } from '../context/ThemeContext';
 
 import logo from "../assets/ainovaLogo.png";
 import logoText from "../assets/ainovaLogoText.png";
@@ -33,11 +34,7 @@ const Header = () => {
     };
   }, []);
 
-  const [darkMode, setDarkMode] = useState(false);
-  const handleToggle = () => {
-    setDarkMode(!darkMode);
-    document.body.classList.toggle("dark-mode", !darkMode);
-  };
+  const { darkMode, toggleTheme } = useTheme();
 
   return (
     <header className="header" id="inicio">
@@ -106,7 +103,7 @@ const Header = () => {
         {menuOpen && <div className="overlay" onClick={toggleMenu}></div>}
 
         {/* Switch para modo oscuro */}
-        <ToggleSwitch isOn={darkMode} handleToggle={handleToggle} />
+        <ToggleSwitch isOn={darkMode} handleToggle={toggleTheme} />
       </nav>
 
     </header>

@@ -16,12 +16,14 @@ import Footer from "./components/Footer";
 
 //importación de estilos
 import "./scss/main.scss";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
 
 
   return (
-    <div className="app">
+    <ThemeProvider>
+      <div className="app">
       <HeroBackgroundSVG />
 
       <Header />
@@ -34,6 +36,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
+    </ThemeProvider>
   );
 }
 

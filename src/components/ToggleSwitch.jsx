@@ -1,5 +1,5 @@
 
-const ToggleSwitch = (isOn, handleToggle) => {
+const ToggleSwitch = ({isOn, handleToggle}) => {
     return (
         <div className="toggle-switch">
             <input
