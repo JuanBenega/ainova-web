@@ -10,24 +10,3 @@ html,
 body {
   height: 100%;
 }
-
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-:root {
-  --bg-color: #ffffff;
-  --text-color: #333333;
-  --card-bg: #ffffff;
-  --gradient-start: #7e73ff;
-  --gradient-end: #6941c6;
-}
-
-body.dark-mode {
-  --bg-color: #121212;
-  --text-color: #e0e0e0;
-  --card-bg: #1e1e1e;
-  --gradient-start: #6941c6;
-  --gradient-end: #4e0e9e;
-}

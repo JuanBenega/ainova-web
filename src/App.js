@@ -1,4 +1,5 @@
 import React from "react";
+import { ThemeProvider } from './context/ThemeContext';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HeroBackgroundSVG from "./components/HeroBackgroundSVG";
 
@@ -16,16 +17,14 @@ import Footer from "./components/Footer";
 
 //importación de estilos
 import "./scss/main.scss";
-import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
 
 
   return (
-    <ThemeProvider>
+
       <div className="app">
       <HeroBackgroundSVG />
-
       <Header />
       <Hero />
       <Us />
@@ -36,7 +35,6 @@ function App() {
       <Contact />
       <Footer />
     </div>
-    </ThemeProvider>
   );
 }
 
