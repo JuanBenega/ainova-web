@@ -48,30 +48,55 @@ const Contact = () => {
   const [status, setStatus] = useState("");
   const [modalMessage, setModalMessage] = useState(""); // "" (vacío), "success", "error"
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_ainova", // Reemplaza con tu Service ID de EmailJS
-        "template_ainova", // Reemplaza con tu Template ID
+    const service_id = "service_ainova"; // Reemplaza con tu Service ID de EmailJS
+    const template_contacto = "template_ainova"; // Reemplaza con tu Template ID
+    const template_confirmacion = "template_confirmacion"; // Reemplaza con tu Template ID
+    const user_id = "NmWDZyevDrFHicMLL"; // Reemplaza con tu User ID (public key)
+
+    try {
+      // Envío del formulario de contacto a AINova
+      const internalResult =  await emailjs.sendForm(
+        service_id,
+        template_contacto,
         formRef.current,
-        "NmWDZyevDrFHicMLL" // Reemplaza con tu User ID (public key)
-      )
-      .then((result) => {
-        console.log("Mensaje enviado:", result.text);
-        setModalMessage("success");
-        setStatus("Mensaje enviado con éxito!");
-      })
-      .catch((error) => {
-        console.error("Error al enviar:", error.text);
-        setModalMessage("error");
-        setStatus("Error al enviar el mensaje. Inténtalo de nuevo.");
-      });
+        user_id
+      );
+      console.log("Email enviado:", internalResult.text);
+
+      // Envío de la confirmación al usuario
+      const confirmationResult =  await emailjs.sendForm(
+        service_id,
+        template_confirmacion,
+        formRef.current,
+        user_id
+      );
+      console.log("✅ Confirmación enviada al usuario:", confirmationResult.text);
+
+      setModalMessage("success");
+      setStatus("¡Mensaje enviado con éxito! Revisa tu bandeja de entrada.");
+
+    } catch (error) {
+      console.error("Error al enviar:", error.text);
+      setModalMessage("error");
+      setStatus("Error al enviar el mensaje. Inténtalo de nuevo.");
+    }
+
+
   };
 
   const closeModal = () => {
     setModalMessage("");
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+      services: [],
+    });
+    formRef.current.reset();
   };
 
   return (
@@ -148,7 +173,7 @@ const Contact = () => {
             <div className="modalContent">
               <h3>¡Gracias por tu contacto!</h3>
               <p>
-                Tu mensaje se envió con éxito. Te responderemos a la brevedad.
+                {status}
               </p>
               <button onClick={closeModal}>Cerrar</button>
             </div>
@@ -159,7 +184,7 @@ const Contact = () => {
           <div className="modalOverlay">
             <div className="modalContent">
               <h3>Hubo un problema</h3>
-              <p>No pudimos enviar tu mensaje. Inténtalo de nuevo más tarde.</p>
+              <p>{status}</p>
               <button onClick={closeModal}>Cerrar</button>
             </div>
           </div>
