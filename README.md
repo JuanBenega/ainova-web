@@ -2,7 +2,7 @@
 
 # 🚀 AINOVA Website
 
-<img src="public/ainova.ico" alt="AINOVA Logo" width="200"/>
+<img src="src/assets/ainovaLogo.png" alt="AINOVA Logo" width="200"/>
 
 [![React](https://img.shields.io/badge/React-18.3.1-blue.svg)](https://reactjs.org/)
 [![SASS](https://img.shields.io/badge/SASS-1.81.0-pink.svg)](https://sass-lang.com/)
