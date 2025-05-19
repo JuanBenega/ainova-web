@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🚀 AINOVA Website
 
-## Available Scripts
+<img src="public/ainova.ico" alt="AINOVA Logo" width="200"/>
 
-In the project directory, you can run:
+[![React](https://img.shields.io/badge/React-18.3.1-blue.svg)](https://reactjs.org/)
+[![SASS](https://img.shields.io/badge/SASS-1.81.0-pink.svg)](https://sass-lang.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 
-### `npm start`
+Una plataforma web moderna y dinámica para soluciones digitales innovadoras.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Ver Demo](https://ainova-solutions.com) • [Reportar Bug](https://github.com/JuanBenega/ainova-web/issues) • [Solicitar Feature](https://github.com/JuanBenega/ainova-web/issues)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+</div>
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Características Principales
 
-### `npm run build`
+<div align="center">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| 🎨 Diseño | 🛠 Funcionalidades | 📱 Responsive |
+|-----------|-------------------|---------------|
+| Moderno y minimalista | Modo oscuro/claro | Mobile-first |
+| Animaciones suaves | Formulario de contacto | Adaptable a todos los dispositivos |
+| UI/UX optimizada | Carrusel de servicios | Cross-browser compatibility |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔧 Stack Tecnológico
 
-### `npm run eject`
+- **Frontend:** React 18, SASS
+- **Librerías:** EmailJS, React Slick, Swiper
+- **Routing:** React Router DOM
+- **Optimización:** Web Vitals
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Inicio Rápido
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1️⃣ **Clona el repositorio**
+```bash
+git clone https://github.com/JuanBenega/ainova-web.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2️⃣ **Instala dependencias**
+```bash
+cd ainova-web
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3️⃣ **Inicia el servidor de desarrollo**
+```bash
+npm start
+```
 
-## Learn More
+## 📁 Estructura del Proyecto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+ainova-web/
+├── 📂 src/
+│   ├── 📂 components/    # Componentes React
+│   ├── 📂 context/       # Context API
+│   ├── 📂 scss/         # Estilos SASS
+│   ├── 📂 assets/       # Recursos estáticos
+│   └── 📄 App.jsx       # Componente principal
+├── 📂 public/           # Archivos públicos
+└── 📄 package.json      # Dependencias y scripts
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📚 Scripts Disponibles
 
-### Code Splitting
+| Comando | Descripción |
+|---------|-------------|
+| `npm start` | Inicia el servidor de desarrollo |
+| `npm run build` | Construye la app para producción |
+| `npm test` | Ejecuta los tests |
+| `npm run sass` | Compila SASS en tiempo real |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🌐 Despliegue
 
-### Analyzing the Bundle Size
+El proyecto está configurado para ser desplegado automáticamente en https://ainova-solutions.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Contribuir
 
-### Making a Progressive Web App
+Las contribuciones son bienvenidas. Por favor, lee nuestra [guía de contribución](CONTRIBUTING.md) antes de enviar un PR.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📄 Licencia
 
-### Advanced Configuration
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE.md](LICENSE.md) para más detalles.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ✨ Autores
 
-### Deployment
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/tu-usuario">
+        <img src="https://github.com/JuanBenega.png" width="100px;" alt="Foto del autor"/><br />
+        <sub><b>AINOVA Team</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+<div align="center">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Hecho con ❤️ por [AINOVA Solutions](https://ainova-solutions.com)
+
+</div>
