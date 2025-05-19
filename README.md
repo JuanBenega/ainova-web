@@ -93,7 +93,7 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE.md](LICEN
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/tu-usuario">
+      <a href="https://github.com/JuanBenega">
         <img src="https://github.com/JuanBenega.png" width="100px;" alt="Foto del autor"/><br />
         <sub><b>AINOVA Team</b></sub>
       </a>
