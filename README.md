@@ -2,7 +2,7 @@
 
 # 🚀 AINOVA Website
 
-<img src="public/ainova.ico" alt="AINOVA Logo" width="200"/>
+<img src="src/assets/ainovaLogo.png" alt="AINOVA Logo" width="200"/>
 
 [![React](https://img.shields.io/badge/React-18.3.1-blue.svg)](https://reactjs.org/)
 [![SASS](https://img.shields.io/badge/SASS-1.81.0-pink.svg)](https://sass-lang.com/)
@@ -80,20 +80,13 @@ ainova-web/
 
 El proyecto está configurado para ser desplegado automáticamente en https://ainova-solutions.com
 
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas. Por favor, lee nuestra [guía de contribución](CONTRIBUTING.md) antes de enviar un PR.
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE.md](LICENSE.md) para más detalles.
 
 ## ✨ Autores
 
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/tu-usuario">
+      <a href="https://github.com/JuanBenega">
         <img src="https://github.com/JuanBenega.png" width="100px;" alt="Foto del autor"/><br />
         <sub><b>AINOVA Team</b></sub>
       </a>
