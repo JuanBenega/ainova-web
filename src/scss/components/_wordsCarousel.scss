@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    max-width: 100vw; // Asegura que no se desborde en móviles
 
   .wordsRow {
     display: inline-flex;
@@ -31,7 +32,7 @@
     }
   }
 
-  @media (max-width: map-get($breakpoints, mobile)) {
+  @media (max-width: map-get($breakpoints, tablet)) {
     max-width: 100vw; // Ajuste para móviles
   }
 }
