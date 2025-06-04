@@ -1,5 +1,5 @@
 
-const ServicesCard = ({ category, icon, title, description, bottomIcon }) => {
+const ServicesCard = ({ category, icon, title, description, bottomIcon, className }) => {
   return (
     <div className="servicesCard">
       <div className="servicesCardHeader">

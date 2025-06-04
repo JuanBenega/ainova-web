@@ -7,6 +7,7 @@ import imgCardSoftware from "../assets/serviceCardSoftware.png";
 import imgCardManagment from "../assets/serviceCardManagment.png";
 import imgCardUser from "../assets/serviceCardUser.png";
 import imgCardSocial from "../assets/serviceCardSocial.png";
+import imgCardIa from "../assets/serviceCardIa.png";
 import iconCards from "../assets/serviceCardIcon.png";
 import WordsCarousel from "./WordsCarousel";
 
@@ -22,15 +23,15 @@ const Services = () => {
         {
           category: "Product",
           icon: imgCardProduct,
-          title: "Desarrollo de Marca",
-          description: "Desarrollamos marcas fuertes en el entorno digital, optimizando tu presencia en línea.",
+          title: "Marketing Digital y Desarrollo de Marca",
+          description: "Desarrollamos marcas fuertes en el entorno digital, optimizando tu presencia en línea. Creamos estrategias de marketing digital personalizadas para aumentar tu visibilidad y atraer a tu público objetivo.",
           bottomIcon: iconCards,
         },
         {
-            category: "Software",
-            icon: imgCardSoftware,
-            title: "Rebranding y digitalización",
-            description: "Ayudamos a las empresas a adaptarse a los cambios del mercado y a aprovechar las oportunidades que ofrece el mundo digital.",
+            category: "Software Engineering",
+            icon: imgCardIa,
+            title: "Inteligencia Artificial y automatización",
+            description: "Implementamos soluciones basadas en IA para generar contenido, automatizar tareas y optimizar procesos, mejorando la eficiencia y el rendimiento de tu marca.",
             bottomIcon: iconCards,
           },
           {

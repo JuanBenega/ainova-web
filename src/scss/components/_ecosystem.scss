@@ -6,7 +6,7 @@
   justify-content: space-around;
   margin-bottom: 38px;
 
-  @media (max-width: map-get($breakpoints, mobile)) {
+  @media (max-width: map-get($breakpoints, tablet)) {
     flex-wrap: wrap;
     height: auto;
     width: 55%;

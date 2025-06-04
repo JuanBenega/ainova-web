@@ -73,7 +73,7 @@
         }
       }
 
-      @media (max-width: map-get($breakpoints, mobile)) {
+      @media (max-width: map-get($breakpoints, tablet)) {
         display: none;
       }
     }
@@ -91,7 +91,7 @@
         transform: scale(1.05);
       }
 
-      @media (max-width: map-get($breakpoints, mobile)) {
+      @media (max-width: map-get($breakpoints, tablet)) {
         display: flex;
       }
     }
@@ -114,7 +114,7 @@
         height: 101px;
         justify-self: center;
 
-        @media (max-width: map-get($breakpoints, mobile)) {
+        @media (max-width: map-get($breakpoints, tablet)) {
           width: 76px;
           height: auto;
         }
@@ -129,13 +129,13 @@
           pointer-events: none;
         }
 
-        @media (max-width: map-get($breakpoints, mobile)) {
+        @media (max-width: map-get($breakpoints, tablet)) {
           width: 94px;
           height: auto;
         }
       }
 
-      @media (max-width: map-get($breakpoints, mobile)) {
+      @media (max-width: map-get($breakpoints, tablet)) {
         gap: 1rem;
       }
     }
@@ -225,11 +225,11 @@
       z-index: 1000;
     }
 
-    @media (max-width: map-get($breakpoints, mobile)) {
+    @media (max-width: map-get($breakpoints, tablet)) {
       height: 40px;
       width: 70vw;
       justify-content: center;
-      top: 2rem !important;
+      //top: 2rem !important;
     }
   }
 

@@ -74,22 +74,22 @@ const Header = () => {
             </ul>
 
             <div className="menuSocials">
-              <a
-                href="https://www.instagram.com/"
+              <a 
+                href="https://www.instagram.com/ainovasolution/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img src={iconInstagram} alt="Logo Instagram" />
               </a>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/profile.php?id=61574987744035"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img src={iconFacebook} alt="Logo Facebook" />
               </a>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/company/ainova-solution/"
                 target="_blank"
                 rel="noreferrer"
               >
