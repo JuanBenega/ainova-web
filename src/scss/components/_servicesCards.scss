@@ -1,5 +1,6 @@
 .servicesCard {
-  background-color: $bakWordsCarousel;
+  background-color: var(--bg-color);
+  border: var(--serviceCardShadow);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   display: flex;

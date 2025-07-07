@@ -1,11 +1,4 @@
-import Button from "./Button";
-
 const Hero = () => {
-
-  const handleClick = () => {
-    alert("Botón presionado!");
-  };
-
   return (
     <div className="heroSection" >
       <div className="heroContainer">

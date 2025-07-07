@@ -29,9 +29,9 @@ export const ThemeProvider = ({ children }) => {
     }
   }, []);
 
-  useEffect(() => {
-    document.body.classList.toggle("dark-mode", darkMode);
-  }, [darkMode]);
+useEffect(() => {
+  document.documentElement.setAttribute('data-theme', darkMode ? 'dark-mode' : 'light');
+}, [darkMode]);
 
   // 5️⃣ Proveemos el estado y la función a toda la app
   return (

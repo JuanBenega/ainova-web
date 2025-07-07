@@ -1,4 +1,28 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #333;
+  --primary-color: #7e73ff;
+  --secondary-color: #6941c6;
+  --backUsCard: #fafafa;
+  --border-color: #e0e0e0;
+  /* Agrega más variables según necesites */
+}
 
+[data-theme="dark-mode"] {
+  --bg-color: #000;
+  --text-color: #e0e0e0;
+  --primary-color: #a79fff;
+  --secondary-color: #7e73ff;
+  --card-bg: #23233a;
+  --buttonTextColor: #f9f5ff;
+  --buttonBorderColor: #42307d;
+  --backUsCard: #242424;
+  --serviceCardText: #dedede;
+  --serviceCardShadow: #414651;
+  --carouselBackground: #42307d;
+  --footerBackground: #181818;
+  /* Ajusta más variables para modo dark */
+}
 
 
 //Colores del proyecto
