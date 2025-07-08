@@ -1,17 +1,23 @@
-import React from "react";
+import { useTheme } from "../context/ThemeContext";
 
 import iconInstagram from "../assets/footerIconInstagram.png";
 import iconFacebook from "../assets/footerIconFacebook.png";
 import iconLinkedin from "../assets/footerIconLinkedin.png";
 import logo from "../assets/footerLogo.png";
+import iconDarkInstagram from "../assets/footerDarkIconInstagram.png";
+import iconDarkFacebook from "../assets/footerDarkIconFacebook.png";
+import iconDarkLinkedin from "../assets/footerDarkIconLinkedin.png";
+import logoDark from "../assets/footerDarkLogo.png";
 
 const Footer = () => {
+  const { darkMode } = useTheme();
+
   return (
     <footer className="footer">
       <div className="footerContent">
         {/* Sección izquierda: Logo y texto */}
         <a className="footerLeft" href="#inicio">
-          <img src={logo} alt="AINova Logo" className="footerLogo" />
+          <img src={darkMode ? logoDark : logo} alt="AINova Logo" className="footerLogo" />
           <p className="footerTagline">
             Innovación y crecimiento para tu empresa.
           </p>
@@ -25,21 +31,21 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={iconInstagram} alt="Logo Instagram" />
+              <img src={darkMode ? iconDarkInstagram : iconInstagram} alt="Logo Instagram" />
             </a>
             <a
               href="https://www.facebook.com/profile.php?id=61574987744035"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={iconFacebook} alt="Logo Facebook" />
+              <img src={darkMode ? iconDarkFacebook : iconFacebook} alt="Logo Facebook" />
             </a>
             <a
               href="https://www.linkedin.com/company/ainova-solution/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={iconLinkedin} alt="Logo Linkedin" />
+              <img src={darkMode ? iconDarkLinkedin : iconLinkedin} alt="Logo Linkedin" />
             </a>
           </div>
 

@@ -20,8 +20,8 @@
       padding: 0.5rem 1rem;
       background: linear-gradient(
         274deg,
-        $titleColor 0%,
-        $bakWordsCarousel 100%
+        var(--titleColor) 0%,
+        var(--carouselBackground) 100%
       );
       color: #fff;
       font-weight: bold;

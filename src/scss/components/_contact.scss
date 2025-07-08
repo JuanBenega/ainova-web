@@ -38,9 +38,11 @@
       width: 100%;
       padding: 10px;
       border: 1px solid #ccc;
+      background-color: var(--bg-color);
       border-radius: 8px;
       font-size: 14px;
       font-family: inherit;
+      color: var(--text-color);
 
       &:focus {
         border-color: #6a11cb;

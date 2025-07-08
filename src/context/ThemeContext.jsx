@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useEffect, useContext } from "react";
 
 // 1️⃣ Creamos el contexto con un valor por defecto
 export const ThemeContext = createContext({
@@ -40,3 +40,7 @@ useEffect(() => {
     </ThemeContext.Provider>
   );
 };
+
+export function useTheme() {
+  return useContext(ThemeContext);
+}

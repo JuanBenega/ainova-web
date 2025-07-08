@@ -1,5 +1,5 @@
 .footer {
-  background-color: $backFooter; // Ajusta según tu diseño
+  background-color: var(--footerBackground); // Ajusta según tu diseño
   padding: 1.5rem 8rem;
   font-family: $fontStack;
 
@@ -22,7 +22,7 @@
       .footerTagline {
         font-size: 0.7rem;
         font-weight: bolder;
-        color: $tagLineFooter;
+        color: var(--footerTextColor); // Color del texto
       }
     }
 

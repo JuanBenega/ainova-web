@@ -4,8 +4,14 @@
   --primary-color: #7e73ff;
   --secondary-color: #6941c6;
   --backUsCard: #fafafa;
-  --border-color: #e0e0e0;
-  /* Agrega más variables según necesites */
+  --border-color: #6941c6;
+  --serviceCardShadow: rgba(0, 0, 0, 0.1);
+  --serviceCardBorder: #dedede;
+  --carouselBackground: #fff;
+  --titleColor: #6941c6;
+  --footerBackground: #d3d3d3;
+  --footerTextColor: #5C5C5C;
+    /* Agrega más variables según necesites */
 }
 
 [data-theme="dark-mode"] {
@@ -19,8 +25,11 @@
   --backUsCard: #242424;
   --serviceCardText: #dedede;
   --serviceCardShadow: #414651;
-  --carouselBackground: #42307d;
-  --footerBackground: #181818;
+  --serviceCardBorder: #3b3b3b;
+  --carouselBackground: #150f27;
+  --titleColor: #42307d;
+  --footerBackground: #414651;
+  --footerTextColor: #dedede;
   /* Ajusta más variables para modo dark */
 }
 
@@ -38,7 +47,7 @@ $bakWordsCarousel: #FFF;
 $backFooter: #d3d3d3;
 $tagLineFooter: #5C5C5C;
 $rightsFooter: #9e6ee649;
-$toggleColor:#2E2E48;
+$toggleColor: #2E2E48;
 
 $colorBack1: #0048FF;
 $colorBack2: #00DDFF;
@@ -50,8 +59,8 @@ $colorBack4: #FF8400;
 $fontStack: 'Inter', sans-serif;
 
 //Tamaño de fuentes
-$fontSizeNormal: 1rem; 
-$fontSizeLarge: 1.5rem; 
+$fontSizeNormal: 1rem;
+$fontSizeLarge: 1.5rem;
 $fontSizeSmall: 0.875rem;
 $fontSizeTitle: 4rem;
 $fontSize18: 1.12rem;
@@ -65,7 +74,7 @@ $fontSize26: 1.6rem;
 $fontWeigthNormal: 400;
 $fontWeigth500: 500;
 $fontWeigthTitle: 300;
-$fontWeigthStrong:900;
+$fontWeigthStrong: 900;
 $fontWeigth700: 700;
 $fontWeigth600: 600;
 

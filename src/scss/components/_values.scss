@@ -5,7 +5,7 @@
 .valuesPopup {
   height: $px670;
   width: 100vw;
-  background-color: $backValues;
+  background-color: var(--backUsCard);
   position: relative;
 }
 
