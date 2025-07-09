@@ -1,6 +1,23 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useTheme } from "../context/ThemeContext";
 
 const HeroBackgroundSVG = () => {
+  const { darkMode } = useTheme();
+
+  const gradients = darkMode
+    ? {
+        grad1: "#0048FF3A",
+        grad2: "#00DDFF3A",
+        grad3: "#8800FF3A",
+        grad4: "#FF84003A",
+      }
+    : {
+        grad1: "#0048FF56",
+        grad2: "#00DDFF56",
+        grad3: "#8800FF56",
+        grad4: "#FF840056",
+      };
+  
   const [randomTranslate, setRandomTranslate] = useState({
     fromX: 0,
     fromY: 0,
@@ -39,30 +56,21 @@ const HeroBackgroundSVG = () => {
     >
       <defs>
         <radialGradient id="grad1" cx="50%" cy="50%" r="50%">
-          <stop
-            offset="0%"
-            style={{ stopColor: "#0048FF56", stopOpacity: 1 }}
-          />
+          <stop offset="0%" style={{ stopColor: gradients.grad1, stopOpacity: 1 }} />
           <stop
             offset="100%"
             style={{ stopColor: "rgba(255,255,255,0)", stopOpacity: 0 }}
           />
         </radialGradient>
         <radialGradient id="grad2" cx="50%" cy="50%" r="50%">
-          <stop
-            offset="0%"
-            style={{ stopColor: "#00DDFF56", stopOpacity: 1 }}
-          />
+          <stop offset="0%" style={{ stopColor: gradients.grad2, stopOpacity: 1 }} />
           <stop
             offset="100%"
             style={{ stopColor: "rgba(255,255,255,0)", stopOpacity: 0 }}
           />
         </radialGradient>
         <radialGradient id="grad3" cx="50%" cy="50%" r="50%">
-          <stop
-            offset="0%"
-            style={{ stopColor: "#8800FF56", stopOpacity: 1 }}
-          />
+          <stop offset="0%" style={{ stopColor: gradients.grad3, stopOpacity: 1 }} />
           <stop
             offset="100%"
             style={{ stopColor: "rgba(255,255,255,0)", stopOpacity: 0 }}
@@ -71,7 +79,7 @@ const HeroBackgroundSVG = () => {
         <radialGradient id="grad4" cx="50%" cy="50%" r="50%">
           <stop
             offset="0%"
-            style={{ stopColor: "#FF840056", stopOpacity: 1 }}
+            style={{ stopColor: gradients.grad4, stopOpacity: 1 }}
           />
           <stop
             offset="100%"

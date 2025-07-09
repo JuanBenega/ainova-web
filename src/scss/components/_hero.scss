@@ -34,10 +34,11 @@
 }
 
 .heroText {
-  color: $titleTextColor;
+  color: var(--titleTextColor);
   font-size: $fontSize18;
   max-width: 600px;
   margin-bottom: 150px;
+
 
   @media (max-width: map-get($breakpoints, mobile)) {
     max-width: 90%;
@@ -55,8 +56,8 @@
   width: 14rem;
   height: 3.5rem;
   font-weight: $fontWeigth700;
-  border-radius: 72px;        
-  align-content:center;
+  border-radius: 72px;
+  align-content: center;
 
 
   border: 1px solid var(--linear, #a79fff);
