@@ -142,12 +142,12 @@
 // Responsive para dispositivos móviles
 @media (max-width: 768px) {
   .contactFormContainer {
-    width: 100%;
+    width: 95%;
     flex-direction: column;
     gap: 20px;
 
     .contactForm {
-      width: 90%;
+      width: 85%;
 
       button {
         border-radius: 8px;

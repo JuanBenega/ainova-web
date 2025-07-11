@@ -9,11 +9,11 @@
 
   .badge {
     border-radius: 16px;
-    background: var(--Brand-50, $ligthColor);
-    mix-blend-mode: multiply;
+    background: var(--badgeColor);
+    //mix-blend-mode: multiply;
     width: fit-content;
     padding: 4px 12px;
-    color: $titleTextColor;
+    color: var(--badgeTextColor);
   }
   
   .title {

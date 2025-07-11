@@ -70,5 +70,6 @@
 
     @media (max-width: map-get($breakpoints, mobile)) {
         top: 2.5rem;
+        right: 0.1rem; // Ajusta según tu header en mobile
     }
 }
